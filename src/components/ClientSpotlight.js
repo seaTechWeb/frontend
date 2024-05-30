@@ -29,22 +29,22 @@ export default function ClientSpotlight() {
         <h1 className='text-center' >FEATURED CLIENT</h1>
         <div className='row'>
           <div className='col-md-4 text-center'>
-            <img  style={{ width: '410px' }} src='/Images/Feature client/aia.png' alt='Aia' />
+            <img  style={{ width: '80%' }} src='/Images/Feature client/aia.png' alt='Aia' />
             <p style={{ fontSize: '20px' }} className='text-center'>AIA Insurance</p>
           </div>
 
           <div className='col-md-4 text-center'>
-            <img  style={{ width: '410px' }} src='/Images/Feature client/raksa.png' alt='Asuransi Raksa' />
+            <img  style={{ width: '80%' }} src='/Images/Feature client/raksa.png' alt='Asuransi Raksa' />
             <p style={{ fontSize: '20px' }} className='text-center'>Asuransi Raksa</p>
           </div>
 
           <div className='col-md-4 text-center'>
-            <img  style={{ width: '410px' }} src='/Images/Feature client/logo_ITM.png' alt='Indo Tambang Raya Megah' />
+            <img  style={{ width: '80%' }} src='/Images/Feature client/logo_ITM.png' alt='Indo Tambang Raya Megah' />
             <p style={{ fontSize: '20px' }} className='text-center'>Indo Tambang Raya Megah</p>
           </div>
 
           <div className='col-md-4 text-center'>
-            <img  style={{ width: '410px' }} src='/Images/Feature client/logo-aioi.png' alt='AIOI Indonesia' />
+            <img  style={{ width: '80%' }} src='/Images/Feature client/logo-aioi.png' alt='AIOI Indonesia' />
             <p style={{ fontSize: '20px' }} className='text-center'>AIOI Indonesia</p>
           </div>
 
@@ -54,22 +54,22 @@ export default function ClientSpotlight() {
           </div>
 
           <div className='col-md-4 text-center'>
-            <img  style={{ width: '410px' }} src='/Images/Feature client/nutrifood.png' alt='Nutrifood' />
+            <img  style={{ width: '80%' }} src='/Images/Feature client/nutrifood.png' alt='Nutrifood' />
             <p style={{ fontSize: '20px' }} className='text-center'>Nutrifood</p>
           </div>
 
           <div className='col-md-4 text-center'>
-            <img  style={{ width: '410px' }} src='/Images/Feature client/mnc.png' alt='MNC' />
+            <img  style={{ width: '80%' }} src='/Images/Feature client/mnc.png' alt='MNC' />
             <p style={{ fontSize: '20px' }} className='text-center'>MNC</p>
           </div>
 
           <div className='col-md-4 text-center'>
-            <img  style={{ width: '410px' }} src='/Images/Feature client/gardaoto.png' alt='Garda Oto' />
+            <img  style={{ width: '80%' }} src='/Images/Feature client/gardaoto.png' alt='Garda Oto' />
             <p style={{ fontSize: '20px' }} className='text-center'>Garda Oto</p>
           </div>
 
           <div className='col-md-4 text-center'>
-            <img  style={{ width: '410px' }} src='/Images/Feature client/nonstophonolulu.png' alt='Nonstop Honolulu' />
+            <img  style={{ width: '80%' }} src='/Images/Feature client/nonstophonolulu.png' alt='Nonstop Honolulu' />
             <p style={{ fontSize: '20px' }} className='text-center'>Nonstop Honolulu</p>
           </div>
 
@@ -77,7 +77,7 @@ export default function ClientSpotlight() {
 
           </div>
           <div className='col-md-4 text-center'>
-            <img  style={{ width: '410px' }} src='/Images/Feature client/lib.png' alt='Liberty Mutual Insurance' />
+            <img  style={{ width: '80%' }} src='/Images/Feature client/lib.png' alt='Liberty Mutual Insurance' />
             <p style={{ fontSize: '20px' }} className='text-center'>Liberty Mutual Insurance</p>
           </div>
         </div>
