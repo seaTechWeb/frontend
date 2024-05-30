@@ -6,6 +6,7 @@ import ClientSpotlight from './components/ClientSpotlight';
 import Technology from './components/Technology';
 import OurStory from './components/OurStory';
 import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Technology />
       <OurStory />
       <ContactUs />
+      <Footer/>
       </div>
     </>
   );
