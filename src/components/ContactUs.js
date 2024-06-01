@@ -121,9 +121,9 @@ export default function ContactUs() {
         </div>
       </div>
 
-      <div className='container py-4' style={{marginTop:'50px'}}>
+      <div className='container py-4'>
         <div className='row'>
-          <div className='col-md-4'>
+          <div className='col-md-4' style={{ marginTop: '80px' }}>
             <nav className='d-flex flex-row bd-highlight mb-3 '>
               <img style={{ width: '60px', height: '60px' }} src='/Images/Flags/ICON_FLAG_USA.png' alt='USA Flag' />
               <p className='align-self-center mb-0'><b>USA</b></p>
@@ -135,7 +135,7 @@ export default function ContactUs() {
             <p className='mb-0' style={{ fontSize: '21px' }}>Phone: +1 3107654086</p>
           </div>
 
-          <div className='col-md-4'>
+          <div className='col-md-4' style={{ marginTop: '80px' }}>
             <nav className='d-flex flex-row bd-highlight mb-3 '>
               <img style={{ width: '60px', height: '60px' }} src='/Images/Flags/ICON_FLAG_UK.png' alt='UK Flag' />
               <p className='align-self-center mb-0'><b>UK</b></p>
@@ -147,7 +147,7 @@ export default function ContactUs() {
             <p className='mb-0' style={{ fontSize: '21px' }}>Phone : + 44 7583688745</p>
           </div>
 
-          <div className='col-md-4'>
+          <div className='col-md-4'style={{ marginTop: '80px' }}> 
             <nav className='d-flex flex-row bd-highlight mb-3 '>
               <img style={{ width: '60px', height: '60px' }} src='/Images/Flags/ICON_FLAG_INDONESIA.png' alt='Indonesia Flag' />
               <p className='align-self-center mb-0'><b>INDONESIA</b></p>
@@ -162,8 +162,8 @@ export default function ContactUs() {
             <p className='mb-0' style={{ fontSize: '21px' }}>Fax : + 6221 57903889</p>
           </div>
         </div>
-        <div className='row' style={{ marginTop: '80px' }}>
-          <div className='col-md-4'>
+        <div className='row' >
+          <div className='col-md-4' style={{ marginTop: '80px' }}>
             <nav className='d-flex flex-row bd-highlight mb-3 '>
               <img style={{ width: '60px', height: '60px' }} src='/Images/Flags/ICON_FLAG_SINGAPORE.png' alt='Singapore flag' />
               <p className='align-self-center mb-0'><b>SINGAPORE</b></p>
@@ -175,7 +175,7 @@ export default function ContactUs() {
             <p className='mb-0' style={{ fontSize: '21px' }}>Phone : +65 6956-7445</p>
           </div>
 
-          <div className='col-md-4'>
+          <div className='col-md-4 ' style={{ marginTop: '80px' }}>
             <nav className='d-flex flex-row bd-highlight mb-3 '>
               <img style={{ width: '60px', height: '60px' }} src='/Images/Flags/ICON_FLAG_THAILAND.png' alt='Thailand Flag' />
               <p className='align-self-center mb-0'><b>THAILAND</b></p>
