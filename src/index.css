@@ -47,7 +47,7 @@ section {
     background-color: #f8f9fa;
   }
   
-
+/********************   Client section css *********************/
 
   .client-img {
     transition: transform 0.3s ease;
@@ -55,6 +55,7 @@ section {
   
   .client-img:hover {
     transform: scale(1.1);
+    cursor: pointer;
   }
 
 

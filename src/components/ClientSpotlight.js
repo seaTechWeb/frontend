@@ -3,9 +3,9 @@ import React from 'react';
 export default function ClientSpotlight() {
   return (
     <section id='clients-spotlight'>
-      <div style={{ minHeight: '40vh', backgroundColor: '#e9e9e9' }}>
-        <div className='container' style={{ marginTop: '20px' }} >
-          <h1 className='text-center' style={{ marginTop: '20px' }} >CLIENT SPOTLIGHT</h1>
+      <div style={{ backgroundColor: '#e9e9e9', paddingTop:'20px' }}>
+        <div className='container' >
+          <h1 className='text-center' >CLIENT SPOTLIGHT</h1>
           <div className='row'>
             <div className='col-md-4'>
               <div data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
@@ -124,46 +124,66 @@ export default function ClientSpotlight() {
       <div className='container' style={{ marginTop: '60px' }}>
         <h1 className='text-center' >FEATURED CLIENT</h1>
         <div className='row'>
-          <div className='col-md-4 text-center'>
-            <img style={{ width: '80%' }} src='/Images/Feature client/aia.png' alt='Aia' />
+          <div className='col-md-4 text-center' style={{height:'200px', marginTop:'30px'}}>
+            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
+            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/aia.png' alt='Aia' />
+            </div>
             <p style={{ fontSize: '20px' }} className='text-center'>AIA Insurance</p>
           </div>
-          <div className='col-md-4 text-center'>
-            <img style={{ width: '80%' }} src='/Images/Feature client/raksa.png' alt='Asuransi Raksa' />
+          <div className='col-md-4 text-center' style={{height:'200px', marginTop:'30px'}}>
+            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
+            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/raksa.png' alt='Asuransi Raksa' />
+            </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Asuransi Raksa</p>
           </div>
-          <div className='col-md-4 text-center'>
-            <img style={{ width: '80%' }} src='/Images/Feature client/logo_ITM.png' alt='Indo Tambang Raya Megah' />
+          <div className='col-md-4 text-center' style={{height:'200px', marginTop:'30px'}}>
+            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
+            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/logo_ITM.png' alt='Indo Tambang Raya Megah' />
+            </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Indo Tambang Raya Megah</p>
           </div>
-          <div className='col-md-4 text-center'>
-            <img style={{ width: '80%' }} src='/Images/Feature client/logo-aioi.png' alt='AIOI Indonesia' />
+          <div className='col-md-4 text-center' style={{height:'200px', marginTop:'30px'}}>
+            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
+            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/logo-aioi.png' alt='AIOI Indonesia' />
+            </div>
             <p style={{ fontSize: '20px' }} className='text-center'>AIOI Indonesia</p>
           </div>
-          <div className='col-md-4 text-center'>
-            <img style={{ width: '145px' }} src='/Images/Feature client/starbucks.png' alt='Starbucks Indonesia' />
+          <div className='col-md-4 text-center' style={{height:'200px', marginTop:'30px'}}>
+            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
+            <img style={{ maxHeight: '80%' , maxWidth:'70%' }} src='/Images/Feature client/starbucks.png' alt='Starbucks Indonesia' />
+            </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Starbucks Indonesia</p>
           </div>
-          <div className='col-md-4 text-center'>
-            <img style={{ width: '80%' }} src='/Images/Feature client/nutrifood.png' alt='Nutrifood' />
+          <div className='col-md-4 text-center' style={{height:'200px', marginTop:'30px'}}>
+            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
+            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/nutrifood.png' alt='Nutrifood' />
+            </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Nutrifood</p>
           </div>
-          <div className='col-md-4 text-center'>
-            <img style={{ width: '80%' }} src='/Images/Feature client/mnc.png' alt='MNC' />
+          <div className='col-md-4 text-center' style={{height:'200px', marginTop:'30px'}}>
+            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
+            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/mnc.png' alt='MNC' />
+            </div>
             <p style={{ fontSize: '20px' }} className='text-center'>MNC</p>
           </div>
-          <div className='col-md-4 text-center'>
-            <img style={{ width: '80%' }} src='/Images/Feature client/gardaoto.png' alt='Garda Oto' />
+          <div className='col-md-4 text-center' style={{height:'200px', marginTop:'30px'}}>
+            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
+            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/gardaoto.png' alt='Garda Oto' />
+            </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Garda Oto</p>
           </div>
-          <div className='col-md-4 text-center'>
-            <img style={{ width: '80%' }} src='/Images/Feature client/nonstophonolulu.png' alt='Nonstop Honolulu' />
+          <div className='col-md-4 text-center' style={{height:'200px', marginTop:'30px'}}>
+            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
+            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/nonstophonolulu.png' alt='Nonstop Honolulu' />
+            </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Nonstop Honolulu</p>
           </div>
           <div className='col-md-4'>
           </div>
-          <div className='col-md-4 text-center'>
-            <img style={{ width: '80%' }} src='/Images/Feature client/lib.png' alt='Liberty Mutual Insurance' />
+          <div className='col-md-4 text-center' style={{height:'200px', marginTop:'30px'}}>
+            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
+            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/lib.png' alt='Liberty Mutual Insurance' />
+            </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Liberty Mutual Insurance</p>
           </div>
         </div>
