@@ -70,7 +70,7 @@ export default function ContactUs() {
     <section id='contactUs' style={{marginBottom:'100px'}}>
       <ToastContainer />
       <div className='container'>
-        <h1 className='text-center' style={{ marginTop: '40px' }}>CONTACT US</h1>
+        <h1 className='text-center more-weight' style={{ marginTop: '40px' }}>CONTACT US</h1>
         <div className='row'>
           <div className='col-md-2'></div>
           <div className='col-md-8 py-4'>

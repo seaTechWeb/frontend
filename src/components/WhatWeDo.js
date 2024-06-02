@@ -6,7 +6,7 @@ export default function WhatWeDo() {
       <div className='container'>
 
         <section id='insurancetech'>
-          <h1 className='text-center' style={{ marginTop: '70px' }}>What we Do</h1>
+          <h1 className='text-center more-weight' style={{ marginTop: '70px' }}>What we Do</h1>
           <div className='row' style={{ marginTop: '40px' }}>
             <div className='col-md-6' >
               <img style={{ width: '100%' }} src='./Images/insurancetech.jpg' alt='Insurance' />

@@ -4,7 +4,7 @@ export default function OurStory() {
     return (
         <section id='outStory'>
             <div className='container'>
-            <h1 className='text-center' style={{marginTop:'40px'}}>OUR STORY</h1>
+            <h1 className='text-center more-weight' style={{marginTop:'40px'}}>OUR STORY</h1>
             </div>
         </section>
     )

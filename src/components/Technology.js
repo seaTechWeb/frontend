@@ -4,7 +4,7 @@ export default function Technology() {
     return (
         <section id='technology'>
             <div className='container'>
-                <h1 className='text-center' style={{ marginTop: '30px', marginBottom: '40px' }}>OUR TECHNOLOGY STACK</h1>
+                <h1 className='text-center more-weight' style={{ marginTop: '30px', marginBottom: '40px' }}>OUR TECHNOLOGY STACK</h1>
                 <div className='row'>
                     <div className='col-md-3 d-flex align-items-center justify-content-center' style={{height:'100px'}}>
                         <img style={{ maxHeight:'80%'  , maxWidth : '80%' }} src='/Images/Tech/sql_server.png' alt='SQL server' />

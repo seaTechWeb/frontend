@@ -5,7 +5,7 @@ export default function ClientSpotlight() {
     <section id='clients-spotlight'>
       <div style={{ backgroundColor: '#e9e9e9', paddingTop:'20px' }}>
         <div className='container' >
-          <h1 className='text-center' >CLIENT SPOTLIGHT</h1>
+          <h1 className='text-center more-weight' >CLIENT SPOTLIGHT</h1>
           <div className='row'>
             <div className='col-md-4'>
               <div data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
@@ -122,7 +122,7 @@ export default function ClientSpotlight() {
         </div>
       </div>
       <div className='container' style={{ marginTop: '60px' }}>
-        <h1 className='text-center' >FEATURED CLIENT</h1>
+        <h1 className='text-center more-weight' >FEATURED CLIENT</h1>
         <div className='row'>
           <div className='col-md-4 text-center' style={{height:'170px', marginTop:'30px'}}>
             <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
