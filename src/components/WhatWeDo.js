@@ -57,10 +57,6 @@ export default function WhatWeDo() {
                     </div>
                   </div>
                 </div>
-
-
-
-
               </div>
             </div>
           </div>
@@ -76,10 +72,6 @@ export default function WhatWeDo() {
                 <hr />
                 <p>Our expertise is in building Enterprise Software solutions for our clients. We help our clients formulate a coherent long term software strategy built around their business objectives as well as in the implementation of any such strategy.
                 </p>
-
-
-
-
                 {/* <!-- Button trigger modal --> */}
                 <button type="button" className="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
                   Learn More
@@ -117,11 +109,6 @@ export default function WhatWeDo() {
                     </div>
                   </div>
                 </div>
-
-
-
-
-
 
               </div>
             </div>

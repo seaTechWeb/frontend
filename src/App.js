@@ -1,27 +1,25 @@
 import Navbar from './components/Navbar';
 import './App.css';
-import FirstSection from './components/FirstSection';
-import WhatWeDo from './components/WhatWeDo';
-import ClientSpotlight from './components/ClientSpotlight';
-import Technology from './components/Technology';
-import OurStory from './components/OurStory';
-import ContactUs from './components/ContactUs';
+
 import Footer from './components/Footer';
+import Home from './components/Home';
+import Cubus from './components/Cubus';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 
 function App() {
   return (
     <>
-    <div className='roboto-slab'>
-      <Navbar />
-      <FirstSection />
-      <WhatWeDo />
-      <ClientSpotlight />
-      <Technology />
-      <OurStory />
-      <ContactUs />
-      <Footer/>
-      </div>
+      <Router>
+        <div className='roboto-slab'>
+          <Navbar />
+          <Routes>
+            <Route exact path='/' element={<Home />} />
+            <Route exact path='/cubus' element={<Cubus />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
     </>
   );
 }

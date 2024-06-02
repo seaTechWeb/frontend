@@ -16,10 +16,10 @@ export default function Navbar() {
                   What we Do
                 </a>
                 <ul className="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item" href="#insurancetech">SoftWare for Insurance Vertical</a></li>
-                  <li><a className="dropdown-item" href="#softwareconsulting">Software Consulting</a></li>
-                  <li><a className="dropdown-item" href="#seatechanalytics">Analytics</a></li>
-                  <li><a className="dropdown-item" href="#mobiletech">Mobile Technology</a></li>
+                  <li><a className="dropdown-item" href="/#insurancetech">SoftWare for Insurance Vertical</a></li>
+                  <li><a className="dropdown-item" href="/#softwareconsulting">Software Consulting</a></li>
+                  <li><a className="dropdown-item" href="/#seatechanalytics">Analytics</a></li>
+                  <li><a className="dropdown-item" href="/#mobiletech">Mobile Technology</a></li>
                 </ul>
               </li>
               <li className="nav-item dropdown mx-3">
@@ -27,20 +27,20 @@ export default function Navbar() {
                   Our Product
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item" href="/">CUBUS</a></li>
+                  <li><a className="dropdown-item" href="/cubus">CUBUS</a></li>
                 </ul>
               </li>
               <li className="nav-item mx-3">
-                <a className="nav-link" href="#clients-spotlight">Clients Spotlight</a>
+                <a className="nav-link" href="/#clients-spotlight">Clients Spotlight</a>
               </li>
               <li className="nav-item mx-3">
-                <a className="nav-link" href="#technology">Technology</a>
+                <a className="nav-link" href="/#technology">Technology</a>
               </li>
               <li className="nav-item mx-3">
-                <a className="nav-link" href="#outStory" >Our Story</a>
+                <a className="nav-link" href="/#outStory" >Our Story</a>
               </li>
               <li className="nav-item mx-3">
-                <a className="nav-link" href="#contactUs">Contact Us</a>
+                <a className="nav-link" href="/#contactUs">Contact Us</a>
               </li>
             </ul>
           </div>
