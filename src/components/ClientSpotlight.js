@@ -1,9 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import debounce from 'lodash.debounce';
 
 export default function ClientSpotlight() {
+  const [deviceSize, setDeviceSize] = useState(getDeviceSize(window.innerWidth));
+
+  function getDeviceSize(width) {
+    if (width < 700) {
+      return 1;
+    } else {
+      return 2;
+    }
+  }
+
+  useEffect(() => {
+    
+    const handleResize = debounce(() => {
+      setDeviceSize(getDeviceSize(window.innerWidth));
+    }, 300);
+
+    window.addEventListener('resize', handleResize);
+
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+
+    // Remove event listener on cleanup
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+    
+  }, []);
   return (
     <section id='clients-spotlight'>
-      <div style={{ backgroundColor: '#e9e9e9', paddingTop:'20px' }}>
+      <div style={{ backgroundColor: '#e9e9e9', paddingTop: '20px', marginTop: '30px' }}>
         <div className='container' >
           <h1 className='text-center more-weight' >CLIENT SPOTLIGHT</h1>
           <div className='row'>
@@ -103,7 +131,7 @@ export default function ClientSpotlight() {
                         <p>The application has some useful features such as credit simulator, service booking, and test drive booking.</p>
                         <div className='text-center'>
                           <span style={{ marginRight: '10px' }}>Client : <a href="https://www.astra.co.id/" target='_blank' rel="noreferrer"> Astra International</a></span>
-                          <br/>
+                          <br />
                           <span style={{ marginLeft: '10px' }}>Service : <a href="https://play.google.com/store/apps/details?id=com.langit7.welovehonda&hl=en" target='_blank' rel="noreferrer"> Android (We Love Honda)</a></span>
                           <span style={{ marginLeft: '10px' }}><a href="https://play.google.com/store/apps/details?id=id.co.astra.ai.dev1&hl=en" target='_blank' rel="noreferrer"> Android (Auto 2000)</a></span>
                           <span style={{ marginLeft: '10px' }}><a href="https://apps.apple.com/id/app/astra-motor-catalogue/id995136640" target='_blank' rel="noreferrer">  iOS (We Love Honda)</a></span>
@@ -124,65 +152,65 @@ export default function ClientSpotlight() {
       <div className='container' style={{ marginTop: '60px' }}>
         <h1 className='text-center more-weight' >FEATURED CLIENT</h1>
         <div className='row'>
-          <div className='col-md-4 text-center' style={{height:'170px', marginTop:'30px'}}>
-            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
-            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/aia.png' alt='Aia' />
+          <div className={` ${deviceSize ===1?'col-6':'col-md-4'}  text-center`} style={{ height: '170px', marginTop: '30px' }}>
+            <div style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <img style={{ maxHeight: '80%', maxWidth: '70%' }} src='/Images/Feature client/aia.png' alt='Aia' />
             </div>
             <p style={{ fontSize: '20px' }} className='text-center'>AIA Insurance</p>
           </div>
-          <div className='col-md-4 text-center' style={{height:'170px', marginTop:'30px'}}>
-            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
-            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/raksa.png' alt='Asuransi Raksa' />
+          <div className={` ${deviceSize ===1?'col-6':'col-md-4'}  text-center`} style={{ height: '170px', marginTop: '30px' }}>
+            <div style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <img style={{ maxHeight: '80%', maxWidth: '70%' }} src='/Images/Feature client/raksa.png' alt='Asuransi Raksa' />
             </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Asuransi Raksa</p>
           </div>
-          <div className='col-md-4 text-center' style={{height:'170px', marginTop:'30px'}}>
-            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
-            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/logo_ITM.png' alt='Indo Tambang Raya Megah' />
+          <div className={` ${deviceSize ===1?'col-6':'col-md-4'}  text-center`} style={{ height: '170px', marginTop: '30px' }}>
+            <div style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <img style={{ maxHeight: '80%', maxWidth: '70%' }} src='/Images/Feature client/logo_ITM.png' alt='Indo Tambang Raya Megah' />
             </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Indo Tambang Raya Megah</p>
           </div>
-          <div className='col-md-4 text-center' style={{height:'170px', marginTop:'30px'}}>
-            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
-            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/logo-aioi.png' alt='AIOI Indonesia' />
+          <div className={` ${deviceSize ===1?'col-6':'col-md-4'}  text-center`} style={{ height: '170px', marginTop: '30px' }}>
+            <div style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <img style={{ maxHeight: '80%', maxWidth: '70%' }} src='/Images/Feature client/logo-aioi.png' alt='AIOI Indonesia' />
             </div>
             <p style={{ fontSize: '20px' }} className='text-center'>AIOI Indonesia</p>
           </div>
-          <div className='col-md-4 text-center' style={{height:'170px', marginTop:'30px'}}>
-            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
-            <img style={{ maxHeight: '80%' , maxWidth:'70%' }} src='/Images/Feature client/starbucks.png' alt='Starbucks Indonesia' />
+          <div className={` ${deviceSize ===1?'col-6':'col-md-4'}  text-center`} style={{ height: '170px', marginTop: '30px' }}>
+            <div style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <img style={{ maxHeight: '80%', maxWidth: '70%' }} src='/Images/Feature client/starbucks.png' alt='Starbucks Indonesia' />
             </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Starbucks Indonesia</p>
           </div>
-          <div className='col-md-4 text-center' style={{height:'170px', marginTop:'30px'}}>
-            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
-            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/nutrifood.png' alt='Nutrifood' />
+          <div className={` ${deviceSize ===1?'col-6':'col-md-4'}  text-center`} style={{ height: '170px', marginTop: '30px' }}>
+            <div style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <img style={{ maxHeight: '80%', maxWidth: '70%' }} src='/Images/Feature client/nutrifood.png' alt='Nutrifood' />
             </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Nutrifood</p>
           </div>
-          <div className='col-md-4 text-center' style={{height:'170px', marginTop:'30px'}}>
-            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
-            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/mnc.png' alt='MNC' />
+          <div className={` ${deviceSize ===1?'col-6':'col-md-4'}  text-center`} style={{ height: '170px', marginTop: '30px' }}>
+            <div style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <img style={{ maxHeight: '80%', maxWidth: '70%' }} src='/Images/Feature client/mnc.png' alt='MNC' />
             </div>
             <p style={{ fontSize: '20px' }} className='text-center'>MNC</p>
           </div>
-          <div className='col-md-4 text-center' style={{height:'170px', marginTop:'30px'}}>
-            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
-            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/gardaoto.png' alt='Garda Oto' />
+          <div className={` ${deviceSize ===1?'col-6':'col-md-4'}  text-center`} style={{ height: '170px', marginTop: '30px' }}>
+            <div style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <img style={{ maxHeight: '80%', maxWidth: '70%' }} src='/Images/Feature client/gardaoto.png' alt='Garda Oto' />
             </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Garda Oto</p>
           </div>
-          <div className='col-md-4 text-center' style={{height:'170px', marginTop:'30px'}}>
-            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
-            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/nonstophonolulu.png' alt='Nonstop Honolulu' />
+          <div className={` ${deviceSize ===1?'col-6':'col-md-4'}  text-center`} style={{ height: '170px', marginTop: '30px' }}>
+            <div style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <img style={{ maxHeight: '80%', maxWidth: '70%' }} src='/Images/Feature client/nonstophonolulu.png' alt='Nonstop Honolulu' />
             </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Nonstop Honolulu</p>
           </div>
-          <div className='col-md-4'>
+          <div className='col-md-4' style={{display:`${deviceSize ===1 ?'none':''}`}}>
           </div>
-          <div className='col-md-4 text-center' style={{height:'170px', marginTop:'30px'}}>
-            <div style={{height:'150px', display:'flex', justifyContent:'center',alignItems:'center'}}>
-            <img style={{ maxHeight: '80%' , maxWidth:'70%'}} src='/Images/Feature client/lib.png' alt='Liberty Mutual Insurance' />
+          <div className={` ${deviceSize ===1?'col-6':'col-md-4'}  text-center`} style={{ height: '170px', marginTop: '30px' }}>
+            <div style={{ height: '150px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <img style={{ maxHeight: '80%', maxWidth: '70%' }} src='/Images/Feature client/lib.png' alt='Liberty Mutual Insurance' />
             </div>
             <p style={{ fontSize: '20px' }} className='text-center'>Liberty Mutual Insurance</p>
           </div>
