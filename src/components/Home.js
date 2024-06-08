@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import FirstSection from './FirstSection';
 import WhatWeDo from './WhatWeDo';
 import ClientSpotlight from './ClientSpotlight';
@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <div>
       <FirstSection />
-      <WhatWeDo />
-      <ClientSpotlight />
-      <Technology />
-      <OurStory />
-      <ContactUs />
+      <WhatWeDo id="whatWeDo" />
+      <ClientSpotlight id="clients-spotlight" />
+      <Technology id="technology" />
+      <OurStory id="ourStory" />
+      <ContactUs id="contactUs" />
     </div>
   )
 }

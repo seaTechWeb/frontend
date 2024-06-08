@@ -31,7 +31,7 @@ export default function OurStory() {
 
 
     return (
-        <section id='outStory'>
+        <section id='ourStory'>
             <div className='container'>
                 <h1 className='text-center more-weight' style={{ marginTop: '40px',marginBottom:'40px' }}>OUR STORY</h1>
                 <div className='row '>

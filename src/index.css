@@ -4,6 +4,28 @@
   font-optical-sizing: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Example of consistent styling */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Ensure no conflicting styles */
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Example content to prevent layout shift */
+.cubus-content {
+  padding-top: 80px; /* Ensure enough space for fixed navbar */
+}
 
 section {
   padding-top: 56px; /* Adjust this value based on your navbar height */

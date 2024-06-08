@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function WhatWeDo() {
   return (
@@ -155,7 +156,7 @@ export default function WhatWeDo() {
                         </div><br />
                       </div>
                       <div className="modal-footer text-center">
-                        <button type="button" className="btn btn-dark py-2"  >Learn About CUBUS</button>
+                        {/* <Link to="/cubus" type="button" className="btn btn-dark py-2" >Learn About CUBUS</Link> */}
                         <button type="button" className="btn btn-dark" data-bs-dismiss="modal">Close</button>
                       </div>
                     </div>
@@ -165,7 +166,7 @@ export default function WhatWeDo() {
 
 
 
-                <button type="button" className="btn btn-dark ms-2" style={{fontSize:'15px', padding:'6px 8px'}}>Learn about CUBUS</button>
+                <Link to="/cubus" type="button" className="btn btn-dark ms-2" style={{fontSize:'15px', padding:'6px 8px'}}>Learn about CUBUS</Link>
               </div>
             </div>
           </div>
