@@ -11,7 +11,7 @@ export default function FirstSection() {
             <p style={{fontSize:'30px', fontWeight:'500'}}>Bridging the Human & Technology Divide</p>
           </div>
           <div className='col-md-4 d-flex justify-content-center order-1 order-md-2' style={{height:'400px'}}>
-            <img style={{ height: '95%' }} src='/Images/FirstSection/Screenshot from 2024-06-13 02-18-44.png' alt='Four people' />
+            <img  className='fit-image' style={{ height:'90%', width:'auto' }} src='/Images/FirstSection/Screenshot from 2024-06-13 02-18-44.png' alt='Four people' />
           </div>
         </div>
       </div>
