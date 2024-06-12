@@ -128,11 +128,11 @@ export default function ContactUs() {
               <img style={{ width: '60px', height: '60px' }} src='/Images/Flags/ICON_FLAG_USA.png' alt='USA Flag' />
               <p className='align-self-center mb-0'><b>USA</b></p>
             </nav>
-            <p className='mb-0' style={{ fontSize: '21px' }}>2785 Pacific Coast Highway, #298</p>
-            <p className='mb-0' style={{ fontSize: '21px' }}>Torrance, CA 90505</p>
-            <br />
-            <br />
-            <p className='mb-0' style={{ fontSize: '21px' }}>Phone: +1 3107654086</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>2785 Pacific Coast Highway, #298</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>Torrance, CA 90505</p>
+            
+            
+            <p className='mb-0' style={{ fontSize: '15px' }}>Phone: +1 3107654086</p>
           </div>
 
           <div className='col-md-4' style={{ marginTop: '80px' }}>
@@ -140,11 +140,11 @@ export default function ContactUs() {
               <img style={{ width: '60px', height: '60px' }} src='/Images/Flags/ICON_FLAG_UK.png' alt='UK Flag' />
               <p className='align-self-center mb-0'><b>UK</b></p>
             </nav>
-            <p className='mb-0' style={{ fontSize: '21px' }}>2nd Floor, New London House,</p>
-            <p className='mb-0' style={{ fontSize: '21px' }}>6 London Street, London, EC2R 7LP</p>
-            <br />
-            <br />
-            <p className='mb-0' style={{ fontSize: '21px' }}>Phone : + 44 7583688745</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>2nd Floor, New London House,</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>6 London Street, London, EC2R 7LP</p>
+            
+            
+            <p className='mb-0' style={{ fontSize: '15px' }}>Phone : + 44 7583688745</p>
           </div>
 
           <div className='col-md-4'style={{ marginTop: '80px' }}> 
@@ -152,14 +152,14 @@ export default function ContactUs() {
               <img style={{ width: '60px', height: '60px' }} src='/Images/Flags/ICON_FLAG_INDONESIA.png' alt='Indonesia Flag' />
               <p className='align-self-center mb-0'><b>INDONESIA</b></p>
             </nav>
-            <p className='mb-0' style={{ fontSize: '21px' }}>Menara Kadin Indonesia</p>
-            <p className='mb-0' style={{ fontSize: '21px' }}>18th floor Suite B</p>
-            <p className='mb-0' style={{ fontSize: '21px' }}>Jl. HR. Rasuna Said x-5 Kav. 2-3B</p>
-            <p className='mb-0' style={{ fontSize: '21px' }}>Kuningan, Jakarta 12950</p>
-            <br />
+            <p className='mb-0' style={{ fontSize: '15px' }}>Menara Kadin Indonesia</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>18th floor Suite B</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>Jl. HR. Rasuna Said x-5 Kav. 2-3B</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>Kuningan, Jakarta 12950</p>
+            
 
-            <p className='mb-0' style={{ fontSize: '21px' }}>Phone : + 6221 57903833</p>
-            <p className='mb-0' style={{ fontSize: '21px' }}>Fax : + 6221 57903889</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>Phone : + 6221 57903833</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>Fax : + 6221 57903889</p>
           </div>
         </div>
         <div className='row' >
@@ -168,11 +168,11 @@ export default function ContactUs() {
               <img style={{ width: '60px', height: '60px' }} src='/Images/Flags/ICON_FLAG_SINGAPORE.png' alt='Singapore flag' />
               <p className='align-self-center mb-0'><b>SINGAPORE</b></p>
             </nav>
-            <p className='mb-0' style={{ fontSize: '21px' }}>21 Merchant Road, #04-01</p>
-            <p className='mb-0' style={{ fontSize: '21px' }}>Singapore 058267</p>
-            <br />
-            <br />
-            <p className='mb-0' style={{ fontSize: '21px' }}>Phone : +65 6956-7445</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>21 Merchant Road, #04-01</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>Singapore 058267</p>
+            
+            
+            <p className='mb-0' style={{ fontSize: '15px' }}>Phone : +65 6956-7445</p>
           </div>
 
           <div className='col-md-4 ' style={{ marginTop: '80px' }}>
@@ -180,11 +180,9 @@ export default function ContactUs() {
               <img style={{ width: '60px', height: '60px' }} src='/Images/Flags/ICON_FLAG_THAILAND.png' alt='Thailand Flag' />
               <p className='align-self-center mb-0'><b>THAILAND</b></p>
             </nav>
-            <p className='mb-0' style={{ fontSize: '21px' }}>Level 10 AIA Sathorn Tower,</p>
-            <p className='mb-0' style={{ fontSize: '21px' }}>Yannawa, Sathon, bangkok 10120</p>
-            <br />
-            <br />
-            <p className='mb-0' style={{ fontSize: '21px' }}>Phone : + 66 20558705</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>Level 10 AIA Sathorn Tower,</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>Yannawa, Sathon, bangkok 10120</p>
+            <p className='mb-0' style={{ fontSize: '15px' }}>Phone : + 66 20558705</p>
           </div>
         </div>
       </div>

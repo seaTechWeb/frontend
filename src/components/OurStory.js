@@ -39,7 +39,7 @@ export default function OurStory() {
                     </div>
                     <div className={deviceSize === 1 ? 'col-9 order-2 ' : 'col-4 text-end'}>
                         <p><b>1990 - Los Angele</b></p>
-                        <p style={{ fontSize: '12px' }}>SeaTech was established in 1990 in Los Angeles, USA with the aim of providing high quality IT solutions to a broad range of clients across the globe. The Insurance sector has been our specialty from the outset and our clients included Yasuda Fire & Marine Insurance Company of America and TDC RE. We have used our software expertise to also provide custom solutions to enterprises in various industries including the Los Angeles Public Library, Marubeni America, Hitachi Transport USA, Singapore Airlines USA and NEC Solutions USA</p>
+                        <p style={{ fontSize: '14px' }}>SeaTech was established in 1990 in Los Angeles, USA with the aim of providing high quality IT solutions to a broad range of clients across the globe. The Insurance sector has been our specialty from the outset and our clients included Yasuda Fire & Marine Insurance Company of America and TDC RE. We have used our software expertise to also provide custom solutions to enterprises in various industries including the Los Angeles Public Library, Marubeni America, Hitachi Transport USA, Singapore Airlines USA and NEC Solutions USA</p>
                     </div>
                     <div className={`${deviceSize === 1 ? 'col-3 order-1 ' : 'col-1'}`}>
                         <div>
@@ -66,7 +66,7 @@ export default function OurStory() {
                     </div>
                     <div className={deviceSize === 1 ? 'col-9' : 'col-4'}>
                         <p style={{ marginTop: '30px' }}><b>1993 - Jakarta</b></p>
-                        <p style={{ fontSize: '12px' }}>SeaTech expanded by establishing its Jakarta operations with the first implementation of our AeGIS™ platform for an Indonesian client. AeGIS™ continues to evolve and remains the first choice of various major General Insurance players in Indonesia. We have since augmented AeGIS™ through our suite of products like InstaClaims™, CUBUS™ and Terrafix™ which have been successfully deployed to various partners in Indonesia.</p>
+                        <p style={{ fontSize: '14px' }}>SeaTech expanded by establishing its Jakarta operations with the first implementation of our AeGIS™ platform for an Indonesian client. AeGIS™ continues to evolve and remains the first choice of various major General Insurance players in Indonesia. We have since augmented AeGIS™ through our suite of products like InstaClaims™, CUBUS™ and Terrafix™ which have been successfully deployed to various partners in Indonesia.</p>
                     </div>
                 </div>
 
@@ -75,7 +75,7 @@ export default function OurStory() {
                     </div>
                     <div className={deviceSize === 1 ? 'col-9 order-2 ' : 'col-4 text-end'}>
                         <p style={{ marginTop: '30px' }}><b>1994 - Singapore</b></p>
-                        <p style={{ fontSize: '12px' }}>SeaTech set up an office in the lion city for the implementation of the next generation of our IRIS™ platform to support our reinsurance clients and brokers in Singapore and Hong Kong like Leslie & Godwin, Nicholson Leslia Asia and Swire Blanch. Since then, we have expanded in the General Insurance space with our core Insurance platform, AeGIS™. Both platforms have continued to grow and evolve to meet the complex business and regulatory needs of the region.</p>
+                        <p style={{ fontSize: '14px' }}>SeaTech set up an office in the lion city for the implementation of the next generation of our IRIS™ platform to support our reinsurance clients and brokers in Singapore and Hong Kong like Leslie & Godwin, Nicholson Leslia Asia and Swire Blanch. Since then, we have expanded in the General Insurance space with our core Insurance platform, AeGIS™. Both platforms have continued to grow and evolve to meet the complex business and regulatory needs of the region.</p>
                     </div>
                     <div className={`${deviceSize === 1 ? 'col-3 order-1 ' : 'col-1'}`}>
                         <div className='d-flex justify-content-center' style={{ height: '30px' }}>
@@ -105,7 +105,7 @@ export default function OurStory() {
                     </div>
                     <div className={deviceSize === 1 ? 'col-9' : 'col-4'}>
                         <p style={{ marginTop: '30px' }}><b>1996 - Bangkok</b></p>
-                        <p style={{ fontSize: '12px' }}>SeaTech was able to leverage our expertise in Insurance for our clients in Thailand with a customised implementation of AeGIS™, our core insurance platform for the specialized needs of the Thai market. Today, we ably support the rapidly growing operations of our multiple clients in Thailand and continue to work with both Insurers and Brokers to evolve our products to meet the changing needs of the Thai market.</p>
+                        <p style={{ fontSize: '14px' }}>SeaTech was able to leverage our expertise in Insurance for our clients in Thailand with a customised implementation of AeGIS™, our core insurance platform for the specialized needs of the Thai market. Today, we ably support the rapidly growing operations of our multiple clients in Thailand and continue to work with both Insurers and Brokers to evolve our products to meet the changing needs of the Thai market.</p>
                     </div>
                 </div>
 
@@ -114,7 +114,7 @@ export default function OurStory() {
                     </div>
                     <div className={deviceSize === 1 ? 'col-9 order-2 ' : 'col-4 text-end'}>
                         <p style={{ marginTop: '30px' }}><b>1999 - Manila</b></p>
-                        <p style={{ fontSize: '12px' }}>To support the expansion of our clients into the Philippines, SeaTech set up our operations in Manila in the late 90’s. The core focus of the Manila office was the implementation of our core insurance platform, AeGIS™ which has scaled smoothly to keep in touch with the exponential growth in the Philippines and continues to support the needs of our clients till date.</p>
+                        <p style={{ fontSize: '14px' }}>To support the expansion of our clients into the Philippines, SeaTech set up our operations in Manila in the late 90’s. The core focus of the Manila office was the implementation of our core insurance platform, AeGIS™ which has scaled smoothly to keep in touch with the exponential growth in the Philippines and continues to support the needs of our clients till date.</p>
                     </div>
                     <div className={`${deviceSize === 1 ? 'col-3 order-1 ' : 'col-1'}`}>
                         <div className='d-flex justify-content-center' style={{ height: '30px' }}>
@@ -145,7 +145,7 @@ export default function OurStory() {
                     <div className={deviceSize === 1 ? 'col-9' : 'col-4'}>
                         <p style={{ marginTop: '30px' }}><b>2003 - Dalian
                         </b></p>
-                        <p style={{ fontSize: '12px' }}>Our first project in Mainland China was the successful implementation of a customised version of AeGIS™ for our clients in Dalian to use as their core insurance platform. China was also our initial foray into implementing our Insurance Intelligence solution CUBUS™. Its early success in China was integral to the growth of CUBUS™ which has since been implemented and used at various clients across multiple continents</p>
+                        <p style={{ fontSize: '14px' }}>Our first project in Mainland China was the successful implementation of a customised version of AeGIS™ for our clients in Dalian to use as their core insurance platform. China was also our initial foray into implementing our Insurance Intelligence solution CUBUS™. Its early success in China was integral to the growth of CUBUS™ which has since been implemented and used at various clients across multiple continents</p>
                     </div>
                 </div>
 
@@ -154,7 +154,7 @@ export default function OurStory() {
                     </div>
                     <div className={deviceSize === 1 ? 'col-9 order-2 ' : 'col-4 text-end'}>
                         <p style={{ marginTop: '30px' }}><b>2007 - London</b></p>
-                        <p style={{ fontSize: '12px' }}>SeaTech was able build a version of our core insurance platform AeGIS™ that was suited to one of the most complex financial environments in the UK and supports our clients business across the EU. The success of AeGIS™ for our clients in London was followed by the successful implementation of our Insurance Intelligence solution CUBUS™ which was instrumental in helping our customers gain valuable insights into their business.</p>
+                        <p style={{ fontSize: '14px' }}>SeaTech was able build a version of our core insurance platform AeGIS™ that was suited to one of the most complex financial environments in the UK and supports our clients business across the EU. The success of AeGIS™ for our clients in London was followed by the successful implementation of our Insurance Intelligence solution CUBUS™ which was instrumental in helping our customers gain valuable insights into their business.</p>
                     </div>
                     <div className={`${deviceSize === 1 ? 'col-3 order-1 ' : 'col-1'}`}>
                         <div className='d-flex justify-content-center' style={{ height: '30px' }}>
@@ -181,7 +181,7 @@ export default function OurStory() {
                     </div>
                     <div className={deviceSize === 1 ? 'col-9' : 'col-4'}>
                         <p style={{ marginTop: '30px' }}><b>2008 - mobile</b></p>
-                        <p style={{ fontSize: '12px' }}>Anticipating that mobile computing would be mainstream, our mobile division was created in 2008. This division brings SeaTech's decades of experience, knowledge and expertise into the mobile platform. Our mobile team has been involved with every major mobile platform since the very beginning and we have provided solutions to customers across a variety of domains giving us a depth of knowledge and experience. We have also been able to share this expertise with our enterprise Insurance customers thus helping them take advantage of this new paradigm.</p>
+                        <p style={{ fontSize: '14px' }}>Anticipating that mobile computing would be mainstream, our mobile division was created in 2008. This division brings SeaTech's decades of experience, knowledge and expertise into the mobile platform. Our mobile team has been involved with every major mobile platform since the very beginning and we have provided solutions to customers across a variety of domains giving us a depth of knowledge and experience. We have also been able to share this expertise with our enterprise Insurance customers thus helping them take advantage of this new paradigm.</p>
                     </div>
                 </div>
 

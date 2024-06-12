@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-.roboto-slab{
+
+.roboto-slab {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
 }
@@ -8,13 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Example of consistent styling */
-.navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
+
 
 /* Ensure no conflicting styles */
 .container {
@@ -22,73 +17,90 @@ html {
   margin: 0 auto;
 }
 
-/* Example content to prevent layout shift */
-.cubus-content {
-  padding-top: 80px; /* Ensure enough space for fixed navbar */
-}
+
 
 section {
-  padding-top: 56px; /* Adjust this value based on your navbar height */
+  padding-top: 56px;
 }
- /* Header size */
- .more-weight{
+
+/* Header size */
+.more-weight {
   /* font-size: 40px; */
   font-weight: 700;
- }
+}
 
 /************   Navbar.css *************/
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
 .navbar-brand {
-    font-weight: 700;
-  }
-  
-  .nav-link {
-    font-weight: bold;
-    font-size: 17px;
-  }
-  
-  .nav-link.active,
-  .nav-link:focus,
-  .nav-link:hover {
-    color: #000; /* Darker color for active link */
-    background-color: #e9ecef; /* Slightly darker background */
-    border-radius: 4px; /* Rounded corners */
-  }
-  
-  .custom-navbar-shadow {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  
-  .custom-dropdown-menu {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    width: 300px !important;
-  }
-  
-  .custom-dropdown-menu .dropdown-item {
-    font-weight: bold;
-    padding: 10px 20px;
-  }
-  
-  .custom-dropdown-menu .dropdown-item:hover {
-    background-color: #f8f9fa;
-  }
-  
+  font-weight: 700;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* src/components/Navbar.css */
+
+.nav-link.active {
+  background-color: black;
+  color: white !important;
+  border-radius: 4px;
+}
+
+
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover {
+  color: #000;
+  /* Darker color for active link */
+  background-color: #e9ecef;
+  /* Slightly darker background */
+  border-radius: 4px;
+  /* Rounded corners */
+}
+
+.custom-navbar-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.custom-dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 300px !important;
+}
+
+/* .custom-dropdown-menu .dropdown-item {
+  font-weight: bold;
+  padding: 10px 20px;
+} */
+
+/* .custom-dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+} */
+
 /********************   Client section css *********************/
 
-  .client-img {
-    transition: transform 0.3s ease;
-  }
-  
-  .client-img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-  }
+.client-img {
+  transition: transform 0.3s ease;
+}
+
+.client-img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 
-  /* ***************** Footer *****************/
-.footer1{
+/* ***************** Footer *****************/
+.footer1 {
   height: 50px;
   background-color: #0f0b41;
   color: white;

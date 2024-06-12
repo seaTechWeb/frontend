@@ -30,86 +30,88 @@ export default function Technology() {
     }, []);
 
     return (
-        <section id='technology'>
-            <div className='container'>
-                <h1 className='text-center more-weight' style={{ marginTop: '140px', marginBottom: '10px' }}>OUR TECHNOLOGY STACK</h1>
-                <div className='row'>
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/sql_server.png' alt='SQL server' />
-                    </div>
+        <section id='technology' >
+            <div style={{ backgroundColor: '#e9e9e9', paddingTop: '20px', marginTop: '30px' }}>
+                <div className='container' >
+                    <h1 className='text-center more-weight' style={{ marginTop: '15px', marginBottom: '10px' }}>OUR TECHNOLOGY STACK</h1>
+                    <div className='row'>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/sql_server.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/mysql.png' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/mysql.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/angular.jpg' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/angular.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/codeigniter.png' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/codeigniter.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/oracle.png' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/oracle.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/mongo.png' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/mongo.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%' , maxWidth : '80%'  }} src='/Images/Tech/microsoftdotnet.png' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/microsoftdotnet.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/aws_logo.jpg' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/aws_logo.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/azure.png' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/azure.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/firebase.png' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/firebase.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/swift.png' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/swift.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/crystal_reports.png' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/crystal_reports.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/c_sharp.png' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/c_sharp.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/object_c.png' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/object_c.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/tablequ.jpg' alt='SQL server' />
-                    </div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/tablequ.png' alt='SQL server' />
+                        </div>
 
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                        <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/bitbucket.png' alt='SQL server' />
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/bitbucket.png' alt='SQL server' />
+                        </div>
                     </div>
-                </div>
-                <div className='row'>
-                    <div className='col-md-1' style={{ marginTop: '30px', display: `${deviceSize === 1 ? 'none':''}`  }}></div>
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                         <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/php.png' alt='SQL server' />
-                    </div>
-                    <div className='col-md-1' style={{ marginTop: '30px', display: `${deviceSize === 1 ? 'none':''}` }}></div>
-                    <div className={` ${deviceSize === 1 ?'col-6':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                         <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/java.jpg' alt='SQL server' />
-                    </div>
-                    <div className='col-md-1' style={{ marginTop: '30px', display: `${deviceSize === 1 ? 'none':''}` }}></div>
-                    <div className={` ${deviceSize === 1 ?'col-12':'col-md-3'} d-flex align-items-center justify-content-center`} style={{height:'140px'}}>
-                         <img style={{ height:'80%'  , maxWidth : '80%' }} src='/Images/Tech/OpenText_Gupta.jpg' alt='SQL server' />
+                    <div className='row'>
+                        <div className='col-md-1' style={{ marginTop: '30px', display: `${deviceSize === 1 ? 'none' : ''}` }}></div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/php.png' alt='SQL server' />
+                        </div>
+                        <div className='col-md-1' style={{ marginTop: '30px', display: `${deviceSize === 1 ? 'none' : ''}` }}></div>
+                        <div className={` ${deviceSize === 1 ? 'col-6' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/java.png' alt='SQL server' />
+                        </div>
+                        <div className='col-md-1' style={{ marginTop: '30px', display: `${deviceSize === 1 ? 'none' : ''}` }}></div>
+                        <div className={` ${deviceSize === 1 ? 'col-12' : 'col-md-3'} d-flex align-items-center justify-content-center`} style={{ height: '140px' }}>
+                            <img style={{ height: '80%', maxWidth: '80%' }} src='/Images/Tech/OpenText_Gupta.jpg' alt='SQL server' />
+                        </div>
                     </div>
                 </div>
             </div>
