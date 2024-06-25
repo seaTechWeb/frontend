@@ -13,19 +13,6 @@ section {
   font-weight: 700;
 }
 
-/************   Navbar.css *************/
-
-
-/* .custom-dropdown-menu .dropdown-item {
-  font-weight: bold;
-  padding: 10px 20px;
-} */
-
-/* .custom-dropdown-menu .dropdown-item:hover {
-  background-color: #f8f9fa;
-} */
-
-/********************   Client section css *********************/
 
 .client-img {
   transition: transform 0.3s ease;

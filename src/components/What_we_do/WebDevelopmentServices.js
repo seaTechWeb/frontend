@@ -5,7 +5,7 @@ export default function WebDevelopmentServices() {
     return (
 
         <div style={{ marginTop: '90px' }}>
-            {/* <div style={{ backgroundImage: 'url(/Images/Whatwedo/web-development-banner.jpg)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
+            <div style={{ backgroundImage: 'url(/Images/Whatwedo/web-development-banner.jpg)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
                 <div className='container row'>
                     <div className='col-md-6' style={{ minHeight: '450px', paddingTop: '40px', color: 'white' }}>
                         <h5>Driven to deliver</h5>
@@ -29,14 +29,14 @@ export default function WebDevelopmentServices() {
                         <img style={{ borderRadius: '10px', maxHeight: '500px', maxWidth: '90%' }} src='/Images/Whatwedo/services-front2.jpg' alt='' />
                     </div>
                 </div>
-            </div> */}
+            </div>
             <div className='container' style={{ marginTop: '40px' }}>
                 <div className='text-center'>
-                    {/* <h1>Innovation & excellence powered by latest technology</h1> */}
+                    <h1>Innovation & excellence powered by latest technology</h1>
                 </div>
                 <div className='row'>
                     <div className='col-md-4'>
-                        {/* <div className="card custom-card">
+                        <div className="card custom-card">
                             <div className="card-body">
                                 <h5 className="card-title">Nodejs Development</h5>
                                 <p className="card-text">
@@ -45,7 +45,7 @@ export default function WebDevelopmentServices() {
                                 </p>
                                 <a href="#" className="btn btn-dark">Learn more &rarr;</a>
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>
