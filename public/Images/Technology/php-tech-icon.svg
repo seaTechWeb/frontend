@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-php-tech-icon">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="php-tech-icon" clip-path="url(#clip-php-tech-icon)">
+    <g id="php-tech-icon-2" data-name="php-tech-icon" transform="translate(0 -82.625)">
+      <g id="Group_2" data-name="Group 2" transform="translate(0 95.625)">
+        <path id="Path_8" data-name="Path 8" d="M81.717,172.125H76.5v5.217h5.217a2.609,2.609,0,1,0,0-5.217Z" transform="translate(-66.065 -161.69)" fill="#f6c315"/>
+        <path id="Path_9" data-name="Path 9" d="M52.174,95.625H7.826A7.686,7.686,0,0,0,0,103.451v18.261a7.686,7.686,0,0,0,7.826,7.826H52.174A7.686,7.686,0,0,0,60,121.712V103.451A7.686,7.686,0,0,0,52.174,95.625ZM15.652,113.886H10.435v7.826H7.826V103.451h7.826a5.217,5.217,0,0,1,0,10.435Zm20.87,7.826H33.913v-7.826H26.087v7.826H23.478V103.451h2.609v7.826h7.826v-7.826h2.609Zm10.435-7.826H41.739v7.826H39.13V103.451h7.826a5.217,5.217,0,1,1,0,10.435Z" transform="translate(0 -95.625)" fill="#f6c315"/>
+        <path id="Path_10" data-name="Path 10" d="M311.217,172.125H306v5.217h5.217a2.609,2.609,0,1,0,0-5.217Z" transform="translate(-264.261 -161.69)" fill="#f6c315"/>
+      </g>
+    </g>
+  </g>
+</svg>

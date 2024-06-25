@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-magento-tech-icon">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="magento-tech-icon" clip-path="url(#clip-magento-tech-icon)">
+    <g id="magento-tech-icon-2" data-name="magento-tech-icon" transform="translate(0.708)">
+      <path id="Path_2" data-name="Path 2" d="M29.229,0,3.292,15V45.1l7.187,4.166-.1-29.792L29.229,8.541,48.083,19.584V49.271l6.98-4.375V15Z" transform="translate(0)" fill="#f6c315"/>
+      <path id="Path_3" data-name="Path 3" d="M30.312,45.4,26.2,47.48,22.708,45.4V15.5l-7.5,4.271v30.1l10.99,6.25,11.3-6.25v-30L30.312,15.5Z" transform="translate(2.979 3.875)" fill="#f6c315"/>
+    </g>
+  </g>
+</svg>

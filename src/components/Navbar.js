@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+// import "../Navbar.css";
 
 export default function Navbar() {
   const navbarCollapseRef = useRef(null);
@@ -12,10 +13,12 @@ export default function Navbar() {
   };
 
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light custom-navbar-shadow">
-        <div className="container">
-          <Link className="navbar-brand" to="/">SeaTECH</Link>
+    <div style={{backgroundColor:'red'}}>
+      <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark custom-navbar-shadow">
+        <div className="container" >
+          <Link className="navbar-brand" to="/">
+            {/* <img style={{height:'60px'}} src='/Images/logo.png' alt='logo'/> */}
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -34,19 +37,27 @@ export default function Navbar() {
                   What we Do
                 </HashLink>
                 <ul className="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><HashLink className="dropdown-item" to="/#insurancetech" onClick={handleNavLinkClick}>SoftWare for Insurance Vertical</HashLink></li>
-                  <li><HashLink className="dropdown-item" to="/#softwareconsulting" onClick={handleNavLinkClick}>Software Consulting</HashLink></li>
-                  <li><HashLink className="dropdown-item" to="/#seatechanalytics" onClick={handleNavLinkClick}>Analytics</HashLink></li>
-                  <li><HashLink className="dropdown-item" to="/#mobiletech" onClick={handleNavLinkClick}>Mobile Technology</HashLink></li>
+                  <li><HashLink className="dropdown-item" to="/#branding" onClick={handleNavLinkClick}>Branding & identity</HashLink></li>
+                  <li><HashLink className="dropdown-item" to="/#WebDevelopment" onClick={handleNavLinkClick}>Web development</HashLink></li>
+                  <li><HashLink className="dropdown-item" to="/#mobileDevelopment" onClick={handleNavLinkClick}>Mobile development</HashLink></li>
+                  <li><HashLink className="dropdown-item" to="/#DigitalMarketing" onClick={handleNavLinkClick}>Digital marketing</HashLink></li>
+                  <li><HashLink className="dropdown-item" to="/#consulting" onClick={handleNavLinkClick}>Consulting & IT staff </HashLink></li>
                 </ul>
               </li>
               <li className="nav-item dropdown mx-3">
-                <Link className="nav-link dropdown-toggle" to="/cubus" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                  Our Product
+                <Link className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Project
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><Link className="dropdown-item" to="/cubus" onClick={handleNavLinkClick}>CUBUS</Link></li>
+                  <li><Link className="dropdown-item" to="/Adidas" onClick={handleNavLinkClick}>Adidas</Link></li>
+                  <li><Link className="dropdown-item" to="/cara" onClick={handleNavLinkClick}>Cara</Link></li>
+                  <li><Link className="dropdown-item" to="/fairandhandsome" onClick={handleNavLinkClick}>Fair and handsome</Link></li>
+                  <li><Link className="dropdown-item" to="/ukieri" onClick={handleNavLinkClick}>Ukieri</Link></li>
+                  <li><Link className="dropdown-item" to="/volkswagen" onClick={handleNavLinkClick}>Volkswagen</Link></li>
                 </ul>
+              </li>
+              <li className="nav-item mx-3">
+                <HashLink className="nav-link" to="/#ourCompany" onClick={handleNavLinkClick}>Our Company</HashLink>
               </li>
               <li className="nav-item mx-3">
                 <HashLink className="nav-link" to="/#clients-spotlight" onClick={handleNavLinkClick}>Clients Spotlight</HashLink>

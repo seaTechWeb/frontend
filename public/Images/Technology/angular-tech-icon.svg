@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-angular-tech-icon">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="angular-tech-icon" clip-path="url(#clip-angular-tech-icon)">
+    <g id="angular-tech-icon-2" data-name="angular-tech-icon" transform="translate(0.4)">
+      <path id="svg_2" d="M29.5,0h0L1.6,9.9,5.8,46.95,29.5,60h0L53.2,46.95,57.4,9.9Z" transform="translate(0)" fill="#f6c315"/>
+      <path id="svg_3" d="M20.2,0V6.6h0V37.05h0V60h0L43.9,46.95,48.1,9.9Z" transform="translate(9.3)" fill="#f6c315"/>
+      <path id="svg_4" d="M26,4.4,8.6,43.55h6.45l3.45-8.7H33.35l3.45,8.7h6.45L26,4.4Zm5.1,25.05H20.9L26,17.15Z" transform="translate(3.5 2.2)"/>
+    </g>
+  </g>
+</svg>
