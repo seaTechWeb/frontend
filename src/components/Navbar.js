@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-// import "../Navbar.css";
+import "../Navbar.css";
 
 export default function Navbar() {
   const navbarCollapseRef = useRef(null);
@@ -14,10 +14,10 @@ export default function Navbar() {
 
   return (
     <div style={{backgroundColor:'red'}}>
-      <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark custom-navbar-shadow">
+      <nav className="navbar navbar-expand-lg navbar navbar-light bg-light custom-navbar-shadow">
         <div className="container" >
           <Link className="navbar-brand" to="/">
-            {/* <img style={{height:'60px'}} src='/Images/logo.png' alt='logo'/> */}
+            <img style={{height:'60px'}} src='/Images/logo.png' alt='logo'/>
           </Link>
           <button
             className="navbar-toggler"
