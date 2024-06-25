@@ -39,7 +39,7 @@ export default function OurStory() {
                     </div>
                     <div className={deviceSize === 1 ? 'col-9 order-2 ' : 'col-4 text-end'}>
                         <p><b>1990 - Los Angele</b></p>
-                        <p style={{ fontSize: '14px' }}>SeaTech was established in 1990 in Los Angeles, USA with the aim of providing high quality IT solutions to a broad range of clients across the globe. The Insurance sector has been our specialty from the outset and our clients included Yasuda Fire & Marine Insurance Company of America and TDC RE. We have used our software expertise to also provide custom solutions to enterprises in various industries including the Los Angeles Public Library, Marubeni America, Hitachi Transport USA, Singapore Airlines USA and NEC Solutions USA</p>
+                        <p style={{ fontSize: '14px' }}>TEST TEST TEST. The Insurance sector has been our specialty from the outset and our clients included Yasuda Fire & Marine Insurance Company of America and TDC RE. We have used our software expertise to also provide custom solutions to enterprises in various industries including the Los Angeles Public Library, Marubeni America, Hitachi Transport USA, Singapore Airlines USA and NEC Solutions USA</p>
                     </div>
                     <div className={`${deviceSize === 1 ? 'col-3 order-1 ' : 'col-1'}`}>
                         <div>
