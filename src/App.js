@@ -11,6 +11,10 @@ import Volkswagen from './components/project/Volkswagen';
 import './App.css';
 import ScrollToTop from './components/ScrollToTop';
 import WebDevelopmentServices from './components/What_we_do/WebDevelopmentServices';
+import MobileDevelopment from './components/What_we_do/MobileDevelopment';
+import BrandingAndIdentity from './components/What_we_do/BrandingAndIdentity';
+import DigitalMarketing from './components/What_we_do/DigitalMarketing';
+import Consulting from './components/What_we_do/Consulting';
 
 function App() {
   return (
@@ -27,6 +31,10 @@ function App() {
             <Route exact path='/ukieri' element={<Ukieri />} />
             <Route exact path='/volkswagen' element={<Volkswagen />} />
             <Route exact path='/whatWeWebDevelopment' element={<WebDevelopmentServices />} />
+            <Route exact path='/whatWeMobileDevelopment' element={<MobileDevelopment />} />
+            <Route exact path='/whatWebranding' element={<BrandingAndIdentity />} />
+            <Route exact path='/whatWeDigitalMarketing' element={<DigitalMarketing />} />
+            <Route exact path='/whatWeconsulting' element={<Consulting />} />
           </Routes>
         <Footer />
       </div>

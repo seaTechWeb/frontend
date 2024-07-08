@@ -33,3 +33,77 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+.custom-card {
+  transition: box-shadow 0.3s ease;
+  box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.75); /* Left and bottom yellow shadow */
+}
+
+.custom-card:hover {
+  box-shadow: 12px 12px 0px rgba(255, 215, 0, 0.75); /* Left and bottom black shadow on hover */
+}
+
+.webDeveloper {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border-radius: 25px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.webDeveloper:hover {
+  background-color: rgba(255, 215, 0, 0.75);
+  color: black;
+}
+
+
+
+/* Custom styles for Swiper navigation buttons */
+.swiper-container .swiper-button-prev,
+.swiper-container .swiper-button-next {
+  color: #000000;
+  transition: all 0.3s ease;
+  position: absolute;
+}
+.swiper-container .swiper-button-prev {
+  left: -5px; 
+}
+.swiper-container .swiper-button-next {
+  right: 0px;
+}
+.swiper-container .swiper-button-prev::after,
+.swiper-container .swiper-button-next::after {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+
+.iconlisting-card .d-flex {
+  width: 240px;
+  max-width: 100%;
+  flex: auto;
+  padding: 30px 15px;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  text-align: center;
+  border: solid 1px #DFE5Ef;
+}
+
+@media (max-width: 767.98px) {
+  .iconlisting-card.d-flex {
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+  }
+
+  .iconlisting-card.d-flex li {
+    width: 220px;
+    max-width: 100%;
+    flex: 0 0 220px;
+  }
+}

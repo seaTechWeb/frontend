@@ -77,9 +77,9 @@ export default function Technology() {
                     <div className='row'>
                         {data.map((item, index) => (
                             <div className={deviceSize === 1 ? 'col-6' : 'col-md-3'} style={{ height: '200px' }} key={index}>
-                                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                                    <image href={item.link} x="50" y="50" width="100" height="100" />
-                                    <text x="100" y="180" fontFamily="roboto-slab" fontSize="20" fill='white' textAnchor="middle">
+                                <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet" width="100%" height="100%">
+                                    <image href={item.link} x="25%" y="25%" width="50%" height="50%" />
+                                    <text x="50%" y="90%" fontFamily="roboto-slab" fontSize="20" fill='white' textAnchor="middle">
                                         {item.caption}
                                     </text>
                                 </svg>

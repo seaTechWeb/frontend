@@ -40,7 +40,7 @@ export default function Volkswagen() {
               <div className='col-md-6 order-2 order-md-1 d-flex align-items-center ' style={{ padding: '20px 2px' }}>
                 <div className={`${deviceSize === 1 ? 'text-center' : ''}`}>
                   <img src='/Images/Project/volkswagen/volkswagen-logo.png' alt='Adidas' />
-                  <pre style={{ fontSize: '22px', fontWeight: '900', color: 'white', marginTop: '20px' }} >#HTML 5   #CSS 3   #JavaScript</pre>
+                  <pre style={{ fontSize: '22px', fontWeight: '900', color: 'white', marginTop: '20px' }} >#HTML 5   #CSS 3   </pre>
                   <div className='text-center' style={{ width: '100%' }}>
                     <div className='d-flex justify-content-around'>
                       <Link type="button" className="btn btn-primary btn-lg d-flex justify-content-center align-items-center" to="https://www.volkswagen.ie/en.html" target='_blank' style={{ borderRadius: '34px', width: '191px', height: '70px' }}>Launch project</Link>

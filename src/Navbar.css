@@ -39,7 +39,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    width: 30px !important;
+    width: 300px !important;
 }
 
 /* Add media query for better responsiveness */

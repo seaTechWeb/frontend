@@ -1,9 +1,5 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import BrandingAndIdentity from '../What_we_do/BrandingAndIdentity'
-import MobileDevelopment from '../What_we_do/MobileDevelopment'
-import DigitalMarketing from '../What_we_do/DigitalMarketing'
-import Consulting from '../What_we_do/Consulting'
 
 export default function WhatWeDo() {
   const brandingPoint = ["Brand Strategy & Experience", "Content Strategy", "Guidelines & Systems", "Go-To-Market Strategy", "Trends & Insights", "Identity Design"]
@@ -32,7 +28,7 @@ export default function WhatWeDo() {
                     <span className="text">{item}</span>
                   </div>
                 ))}
-                <BrandingAndIdentity />
+                <Link type="button" to="/whatWebranding" className="btn btn-dark my-3">Learn More about Branding &rarr;</Link>
               </div>
             </div>
           </div>
@@ -52,7 +48,7 @@ export default function WhatWeDo() {
                     <span className="text">{item}</span>
                   </div>
                 ))}
-                <Link type="button" to="/whatWeWebDevelopment" className="btn btn-dark my-3">Learn More</Link>
+                <Link type="button" to="/whatWeWebDevelopment" className="btn btn-dark my-3">Learn More about Web Development &rarr;</Link>
               </div>
             </div>
             <div className='col-md-6 order-1 order-md-2'>
@@ -78,7 +74,7 @@ export default function WhatWeDo() {
                     <span className="text">{item}</span>
                   </div>
                 ))}
-                <MobileDevelopment />
+                <Link type="button" to="/whatWeMobileDevelopment" className="btn btn-dark my-3">Learn More about Mobile Development &rarr;</Link>
               </div>
             </div>
           </div>
@@ -98,7 +94,7 @@ export default function WhatWeDo() {
                     <span className="text"> {item} </span>
                   </div>
                 ))}
-                <DigitalMarketing />
+                <Link type="button" to="/whatWeDigitalMarketing" className="btn btn-dark my-3">Learn More about Digital Marketing &rarr;</Link>
               </div>
             </div>
             <div className='col-md-6 order-1 order-md-2'>
@@ -125,7 +121,7 @@ export default function WhatWeDo() {
                     <span className="text"> {item} </span>
                   </div>
                 ))}
-                <Consulting/>
+                <Link type="button" to="/whatWeconsulting" className="btn btn-dark my-3">Learn More about CIAS &rarr;</Link>
               </div>
             </div>
           </div>
