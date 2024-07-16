@@ -13,11 +13,11 @@ export default function Navbar() {
   };
 
   return (
-    <div style={{backgroundColor:'red'}}>
-      <nav className="navbar navbar-expand-lg navbar navbar-light bg-light custom-navbar-shadow">
-        <div className="container" >
+    <div>
+      <nav className="navbar navbar-expand-lg navbar custom-navbar-shadow" style={{ backgroundColor: '#0f0f49' }}>
+        <div className="container">
           <Link className="navbar-brand" to="/">
-            <img style={{height:'60px'}} src='/Images/logo.png' alt='logo'/>
+            <img style={{ height: '60px' }} src='/Images/logo.png' alt='logo' />
           </Link>
           <button
             className="navbar-toggler"
@@ -41,14 +41,14 @@ export default function Navbar() {
                   <li><HashLink className="dropdown-item" to="/#WebDevelopment" onClick={handleNavLinkClick}>Web development</HashLink></li>
                   <li><HashLink className="dropdown-item" to="/#mobileDevelopment" onClick={handleNavLinkClick}>Mobile development</HashLink></li>
                   <li><HashLink className="dropdown-item" to="/#DigitalMarketing" onClick={handleNavLinkClick}>Digital marketing</HashLink></li>
-                  <li><HashLink className="dropdown-item" to="/#consulting" onClick={handleNavLinkClick}>Consulting & IT staff </HashLink></li>
+                  <li><HashLink className="dropdown-item" to="/#consulting" onClick={handleNavLinkClick}>Consulting & IT staff</HashLink></li>
                 </ul>
               </li>
               <li className="nav-item dropdown mx-3">
                 <Link className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Our Project
                 </Link>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><Link className="dropdown-item" to="/Adidas" onClick={handleNavLinkClick}>Adidas</Link></li>
                   <li><Link className="dropdown-item" to="/cara" onClick={handleNavLinkClick}>Cara</Link></li>
                   <li><Link className="dropdown-item" to="/fairandhandsome" onClick={handleNavLinkClick}>Fair and handsome</Link></li>

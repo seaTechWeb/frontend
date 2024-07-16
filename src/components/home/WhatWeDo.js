@@ -14,7 +14,7 @@ export default function WhatWeDo() {
           <h1 className='text-center more-weight' style={{ marginTop: '30px' }}>What we Do</h1>
           <div className='row' style={{ marginTop: '40px' }}>
             <div className='col-md-6' >
-              <img style={{ width: '100%', maxHeight: '450px' }} src='./Images/Service/services-front1.webp' alt='Insurance' />
+              <img style={{ width: '100%'}} src='./Images/Service/services-front1.webp' alt='Insurance' />
             </div>
             <div className='col-md-6 d-flex align-items-center'>
               <div className='py-4'>
@@ -28,7 +28,7 @@ export default function WhatWeDo() {
                     <span className="text">{item}</span>
                   </div>
                 ))}
-                <Link type="button" to="/whatWebranding" className="btn btn-dark my-3">Learn More about Branding &rarr;</Link>
+                <Link type="button" to="/whatWebranding" className="btn btn-dark my-3 blueButton">Learn More about Branding &rarr;</Link>
               </div>
             </div>
           </div>
@@ -102,7 +102,6 @@ export default function WhatWeDo() {
             </div>
           </div>
         </section>
-
 
         <section id='consulting' style={{ paddingTop: '90px' }}>
           <div className='row' style={{ marginTop: '40px' }}>
