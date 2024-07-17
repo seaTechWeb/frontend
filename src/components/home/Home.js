@@ -4,8 +4,8 @@ import WhatWeDo from './WhatWeDo';
 import ClientSpotlight from './ClientSpotlight';
 import Technology from './Technology';
 import OurStory from './OurStory';
-import ContactUs from './ContactUs';
 import OurCompany from './OurCompany';
+import ContactPage from '../ContactPage';
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <ClientSpotlight id="clients-spotlight" />
       <Technology id="technology" />
       <OurStory id="ourStory" />
-      <ContactUs id="contactUs" />
+      <ContactPage/>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import debounce from 'lodash.debounce';
+import ContactPage from '../ContactPage';
 
 
 export default function FairAndHandsome() {
@@ -33,18 +34,27 @@ export default function FairAndHandsome() {
   }, []);
   return (
     <div style={{ marginTop: '86px' }}>
-      <div style={{ backgroundImage: 'url(./Images/Project/fair/fairandhandsome-banner-image.jpg)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
+      <div style={{ backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 1.8), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),url(./Images/Project/fair/fairandhandsome-banner-image.jpg)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
         <div style={{ backgroundImage: 'url(/Images/Project/adidas/overlay-pattern.png)' }} >
           <div className='container' style={{ paddingTop: '30px' }}>
             <div className='row'>
               <div className='col-md-6 order-2 order-md-1 d-flex align-items-center ' style={{ padding: '20px 2px' }}>
                 <div className={`${deviceSize === 1 ? 'text-center' : ''}`}>
                   <img src='/Images/Project/fair/fairandhandsome-logo.png' alt='Adidas' />
-                  <pre style={{ fontSize: '20px', fontWeight: '900', color: 'white', marginTop: '20px' }} >#Sass  #HTML 5  #JavaScript</pre>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent:'center' }}>
+                    <p style={{ marginRight: '18px', color: 'whitesmoke', marginTop: '10px', fontSize: '24px', fontWeight: '500' }}>#HTML</p>
+                    <p style={{ marginRight: '18px', color: 'whitesmoke', marginTop: '10px', fontSize: '24px', fontWeight: '500' }}>#CSS</p>
+                    <p style={{ marginRight: '18px', color: 'whitesmoke', marginTop: '10px', fontSize: '24px', fontWeight: '500' }}>#JavaScript</p>
+                    <p style={{ marginRight: '18px', color: 'whitesmoke', marginTop: '10px', fontSize: '24px', fontWeight: '500' }}></p>
+                  </div>
+                  <div>
+                    <Link type="button" className="btn blueButton" to="https://www.fullestop.com/pdf/caradiamonds-casestudy.pdf" target='_blank' style={{ borderRadius: '10px' }}> View casestudy</Link>
+                  </div>
+
                 </div>
               </div>
               <div className='col-md-6 order-1 order-md-2'>
-                <img style={{ maxWidth: '100%' }} src='/Images/Project/fair/fairandhandsome-image.png' alt='Adidas Project' />
+                <img style={{ maxWidth: '100%' }} src='/Images/Project/fair/fairandhandsome-image.png' alt='Fair and Handsome Project' />
               </div>
             </div>
           </div>
@@ -76,15 +86,15 @@ export default function FairAndHandsome() {
       </div>
 
       <div className=' container d-flex justify-content-between' style={{ marginTop: '60px' }}>
-        <Link type="button" className="btn btn-primary " to="/cara" >Previous project</Link>
-        <Link type="button" className="btn btn-primary " to="/ukieri" >Next project</Link>
+        <Link type="button" className="btn blueButton " to="/cara" >Previous project</Link>
+        <Link type="button" className="btn blueButton " to="/ukieri" >Next project</Link>
       </div>
 
       <div className='d-flex justify-content-between' style={{ marginTop: '60px' }}>
-        <img style={{ width: '50%' }} src='/Images/Project/fair/fairandhandsome-slider-image1.jpg' alt='adidas' />
-        <img style={{ width: '50%' }} src='/Images/Project/fair/fairandhandsome-slider-image2.jpg' alt='adidas' />
+        <img style={{ width: '50%' }} src='/Images/Project/fair/fairandhandsome-slider-image1.jpg' alt='Fair and Handsome' />
+        <img style={{ width: '50%' }} src='/Images/Project/fair/fairandhandsome-slider-image2.jpg' alt='Fair and Handsome' />
       </div>
-
+      <ContactPage />
     </div >
   )
 }

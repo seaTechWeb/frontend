@@ -52,31 +52,31 @@ export default function ContactPage() {
     const buttonStyle = {
         width: '215px',
         height: '60px',
-        backgroundColor: isHovered ? '#e1c647' : 'black',
-        color: isHovered ? 'black' : 'white',
+        backgroundColor: isHovered ? '#59B702' : 'rgb(10, 193, 10)',
+        color:'white',
         border: 'none',
         transition: 'background-color 0.3s, color 0.3s'
     };
 
     return (
-        <div style={{ backgroundColor: '#ececec',paddingTop: '30px', paddingBottom: '30px' }}>
+        <div style={{ backgroundColor: '#0f0f49',paddingTop: '30px', paddingBottom: '30px' }}>
             <ToastContainer />
             <div className='container'>
 
                 <div className='row'>
                     <div className='col-md-5' style={{marginTop:'30px'}}>
                         <div className='text-center' style={{ width: '170px', height: '50px', backgroundColor: 'black' }}>
-                            <p className='text-center' style={{ fontSize: '28px', fontWeight: '900', color: 'whitesmoke' }}>Contact us</p>
+                        <p className='text-center' style={{ fontSize: '28px', fontWeight: '900', color: 'whitesmoke' }}>Contact us</p>
                         </div>
-                        <p style={{ marginTop: '30px', fontSize: '40px', fontWeight: '800' }}>Looking for a development services company?</p>
-                        <p style={{ marginTop: '30px', fontSize: '20px', fontWeight: '500' }}>Get a free consultation now.</p>
-                        <p style={{ marginTop: '30px', fontSize: '20px', fontWeight: '500' }}>Please fill the form or send us an email</p>
+                        <p style={{ marginTop: '30px', fontSize: '40px', fontWeight: '800',color:'whitesmoke' }}>Looking for a development services company?</p>
+                        <p style={{ marginTop: '30px', fontSize: '20px', fontWeight: '500',color:'whitesmoke' }}>Get a free consultation now.</p>
+                        <p style={{ marginTop: '30px', fontSize: '20px', fontWeight: '500',color:'whitesmoke' }}>Please fill the form or send us an email</p>
                         <a href="mailto:seatech.us@gmail.com" style={{ color: 'blue' }}>seatech.us@gmail.com</a>
                     </div>
                     <div className='col-md-7' style={{marginTop:'30px'}}>
                         <form onSubmit={handleSubmit}>
                             <div className="mb-3">
-                                <label htmlFor="exampleFormControlInput1" className="form-label"><b>Name</b></label>
+                                <label htmlFor="exampleFormControlInput1" className="form-label" style={{color:'whitesmoke'}}><b>Name</b></label>
                                 <input
                                     type="text"
                                     className="form-control"
@@ -88,7 +88,7 @@ export default function ContactPage() {
                                 />
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="exampleFormControlInput2" className="form-label"><b>Email Address</b></label>
+                                <label htmlFor="exampleFormControlInput2" className="form-label" style={{color:'whitesmoke'}}><b>Email Address</b></label>
                                 <input
                                     type="email"
                                     className="form-control"
@@ -100,7 +100,7 @@ export default function ContactPage() {
                                 />
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="exampleFormControlTextarea1" className="form-label">Message</label>
+                                <label htmlFor="exampleFormControlTextarea1" className="form-label" style={{color:'whitesmoke'}}>Message</label>
                                 <textarea
                                     className="form-control"
                                     id="exampleFormControlTextarea1"
@@ -129,5 +129,3 @@ export default function ContactPage() {
         </div>
     )
 }
-
-
