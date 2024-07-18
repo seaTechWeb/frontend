@@ -51,7 +51,7 @@ export default function BrandingAndIdentity() {
           <div className='row'>
             <div className='col-md-6 d-flex align-items-center' style={{ minHeight: '450px', paddingTop: '40px', color: 'white' }}>
               <div>
-                <p style={{ fontSize: '40px', fontWeight: '900' }}>We Design the Trend</p>
+                <p className='bannerDesign'>We Design the Trend</p>
                 <p>Simplifying web experience with design since 2000</p>
               </div>
             </div>

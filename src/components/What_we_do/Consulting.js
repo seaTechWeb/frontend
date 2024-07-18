@@ -59,28 +59,36 @@ export default function Consulting() {
         </div>
         <div className='row'>
           <div className='col-md-4' style={{ marginTop: '30px' }}>
-            <div className='card cardDesign' style={{ minHeight: '340px' }}>
-              <div className='card-body'>
-                <p style={{ fontSize: '30px', fontWeight: '700', marginBottom: '0px' }}>Engagement</p>
-                <p style={{ fontSize: '30px', fontWeight: '900' }}>models</p>
-                <p style={{ fontSize: '16px', fontWeight: '500' }}>SeaTech follows a sophisticated strategy in delivering its services. A robust and powerful engagement model is the foundation for an effective offshore experience. Our engagement model is highly centered on fulfilling customer’s.</p>
-                <Engagement />
+            <div className='card cardDesign' style={{ minHeight: '340px', display: 'flex', flexDirection: 'column' }}>
+              <div className='card-body' style={{ flex: '1 0 auto', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div>
+                  <p style={{ fontSize: '30px', fontWeight: '700', marginBottom: '0px' }}>Engagement</p>
+                  <p style={{ fontSize: '30px', fontWeight: '900' }}>models</p>
+                  <p style={{ fontSize: '16px', fontWeight: '500' }}>SeaTech follows a sophisticated strategy in delivering its services. A robust and powerful engagement model is the foundation for an effective offshore experience. Our engagement model is highly centered on fulfilling customer’s.</p>
+                </div>
+                <div className='buttonContainer' style={{ marginTop: 'auto' }}>
+                  <Engagement />
+                </div>
               </div>
             </div>
           </div>
 
-          <div className='col-md-4' style={{ marginTop: '30px' }} >
-            <div className='card cardDesign' style={{ minHeight: '340px' }}>
-              <div className='card-body'>
+
+          <div className='col-md-4' style={{ marginTop: '30px' }}>
+            <div className='card cardDesign' style={{ minHeight: '340px', display: 'flex', flexDirection: 'column' }}>
+              <div className='card-body' style={{ flex: '1 0 auto', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <div>
                   <p style={{ fontSize: '30px', fontWeight: '700', marginBottom: '0px' }}>Managed IT</p>
                   <p style={{ fontSize: '30px', fontWeight: '900' }}>services</p>
                   <p style={{ fontSize: '16px', fontWeight: '500' }}>IT systems should be simple and they should work. As IT systems have become more complex, the work has become more time-consuming and expensive. This is where SeaTech can help you, by offering its tailor-made managed IT Solutions.</p>
                 </div>
-                <It />
+                <div className='contentContainer' style={{ marginTop: 'auto' }}>
+                  <It />
+                </div>
               </div>
             </div>
           </div>
+
 
           <div className='col-md-4' style={{ marginTop: '30px' }}>
             <div className='card cardDesign' style={{ minHeight: '340px' }}>
@@ -99,10 +107,10 @@ export default function Consulting() {
         <p style={{ marginBottom: '0px' }} className='text-center heading'>Our IT solutions consulting</p>
         <p className='text-center'>We help you assess your present IT situation, offering expert insight and vigorous suggestions that reinforce your decision-making, together with your business and technology strategies. In the 22 years, we have served several business tycoons across diverse sectors, including telecommunications,  the industry, engineering firms, large financial establishments, government agencies, and medium-scale businesses.</p>
         <div className="customerneed-section">
-          <ul className="d-flex flex-wrap justify-content-center iconlisting-card">
+          <ul className="d-flex flex-wrap justify-content-center iconlisting-card ">
             {consultingIcon.map((solution, index) => (
               <li
-                className="d-flex align-items-center justify-content-center"
+                className="d-flex align-items-center justify-content-center iconCardDesign"
                 key={index}
               >
                 <figure>
@@ -115,7 +123,7 @@ export default function Consulting() {
         </div>
       </div>
 
-      <div className='container' style={{ marginTop: '40px' }}>
+      <div className='container' style={{ marginTop: '60px' }}>
         <p style={{ marginBottom: '0px' }} className='text-center heading'>Our expertise</p>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <div className='col-md-6' >
@@ -127,8 +135,9 @@ export default function Consulting() {
           <ul className="d-flex flex-wrap justify-content-center iconlisting-card">
             {expertiseIcon.map((solution, index) => (
               <li
-                className="d-flex align-items-center justify-content-center"
+                className="d-flex align-items-center justify-content-center iconCardDesign"
                 key={index}
+
               >
                 <figure>
                   <img src={solution.link} alt='SEO' />
@@ -141,7 +150,7 @@ export default function Consulting() {
       </div>
 
 
-      <div className='container'>
+      <div className='container' style={{ marginTop: '60px', marginBottom: '60px' }}>
         <p style={{ marginBottom: '0px' }} className='text-center heading'>We operate in</p>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <div className='col-md-10' >
@@ -150,10 +159,10 @@ export default function Consulting() {
           </div>
         </div>
         <div className="customerneed-section">
-          <ul className="d-flex flex-wrap justify-content-center iconlisting-card">
+          <ul className="d-flex flex-wrap justify-content-center iconlisting-card ">
             {operateIcon.map((solution, index) => (
               <li
-                className="d-flex align-items-center justify-content-center"
+                className="d-flex align-items-center justify-content-center iconCardDesign"
                 key={index}
               >
                 <figure>
