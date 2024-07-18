@@ -34,15 +34,6 @@ section {
   align-items: center;
 }
 
-.custom-card {
-  transition: box-shadow 0.3s ease;
-  box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.75); /* Left and bottom yellow shadow */
-}
-
-.custom-card:hover {
-  box-shadow: 12px 12px 0px rgba(255, 215, 0, 0.75); /* Left and bottom black shadow on hover */
-}
-
 .webDeveloper {
   transition: background-color 0.3s ease, color 0.3s ease;
   height: 50px;
@@ -108,7 +99,7 @@ section {
   }
 }
 
-/*  blue button css */
+/*  css during styling website */
 .blueButton{
   background-color: #0f0f49;
   border: 2px solid rgb(19, 78, 154);
@@ -120,14 +111,10 @@ section {
   border: 2px solid rgb(10, 193, 10);
 }
 
-
 .checkmark {
   color: green;
   margin-right: 10px;
 }
-
-
-
 
 .imageDesign {
   border-radius: 20px;
@@ -141,5 +128,37 @@ section {
 
 .imageContainer:hover .imageDesign {
   filter: brightness(80%);
-  
+}
+
+.borderBottom {
+  border-bottom: 5px solid #0f0f49;
+  box-shadow: 0 15px 15px -5px rgba(52, 15, 218, 0.3);
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+}
+.bannerHeading{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+ .custom-card {
+  transition: box-shadow 0.3s ease;
+  box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.75); /* Left and bottom yellow shadow */
+}
+
+.custom-card:hover {
+  box-shadow: 12px 12px 0px rgba(255, 215, 0, 0.75); /* Left and bottom black shadow on hover */
+} 
+
+.cardDesign{
+  border: 3px solid #0f0f49;
+  border-radius: 10px;
+  box-shadow: 10px 10px 0px #0f0f49;
+}
+
+.cardDesign:hover{
+  box-shadow: 10px 10px 0px #59B702;
 }

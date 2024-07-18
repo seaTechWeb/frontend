@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useRef,useEffect } from 'react';
 import ContactPage from '../ContactPage';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -8,13 +8,30 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 export default function BrandingAndIdentity() {
   const [swiperInstance, setSwiperInstance] = useState(null);
+  const brandingTextRef = useRef(null);
+  const brandingImageRef = useRef(null);
+  const [brandingImageHeight, setbrandingImageHeight] = useState('200px');
+  useEffect(() => {
+    const handleResize = () => {
+      if (brandingTextRef.current && brandingImageRef.current) {
+        const textHeight = brandingTextRef.current.clientHeight;
+        setbrandingImageHeight(`${textHeight + 60}px`);
+      }
+    };
+
+    handleResize(); // Set initial height
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const handleMouseEnter = () => {
     if (swiperInstance) {
       swiperInstance.autoplay.stop();
     }
   };
-
   const handleMouseLeave = () => {
     if (swiperInstance) {
       swiperInstance.autoplay.start();
@@ -24,7 +41,7 @@ export default function BrandingAndIdentity() {
 
   return (
     <div style={{ marginTop: '86px' }}>
-      <div style={{
+      <div className='borderBottom' style={{
         backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 1.8), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(/Images/Whatwedo/design-brand-banner-bg.jpg)',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -32,30 +49,32 @@ export default function BrandingAndIdentity() {
       }}>
         <div className='container'>
           <div className='row'>
-            <div className='col-md-6' style={{ minHeight: '450px', paddingTop: '40px', color: 'white' }}>
-              <p style={{ fontSize: '40px', fontWeight: '900' }}>We Design the Trend</p>
-              <p>Simplifying web experience with design since 2000</p>
+            <div className='col-md-6 d-flex align-items-center' style={{ minHeight: '450px', paddingTop: '40px', color: 'white' }}>
+              <div>
+                <p style={{ fontSize: '40px', fontWeight: '900' }}>We Design the Trend</p>
+                <p>Simplifying web experience with design since 2000</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className='container' style={{ marginTop: '40px' }}>
-        <div className='row'>
+        <div className='row imageContainer'>
           <div className='col-md-6 d-flex align-items-center'>
-            <div>
+            <div ref={brandingTextRef}>
               <h2>Design that works!</h2>
               <p>A good design is not just defined by the looks and feel but also how it works. We understand your desire for an inviting as well as informative website.</p>
               <p>That is why we first understand your needs on the visual appeal and branding and then combine it with your understanding of client requirements to give you that perfect blend. Ultimately, we deliver attentive service, inspirational ideas, and rewarding results.</p>
             </div>
           </div>
           <div className='col-md-6'>
-            <img style={{ borderRadius: '10px', minHeight: '250px', maxHeight: '500px', maxWidth: '90%' }} src='/Images/Whatwedo/design-brand-image.webp' alt='' />
+            <img className='imageDesign' ref={brandingImageRef} style={{ borderRadius: '10px',height:brandingImageHeight, width: '100%' }} src='/Images/Whatwedo/design-brand-image.webp' alt='' />
           </div>
         </div>
       </div>
-      <div style={{ backgroundColor: '#ececec', marginTop: '50px', paddingTop: '40px', paddingBottom: '40px' }}>
+      <div style={{ backgroundColor: '#ececec', marginTop: '50px', paddingTop: '40px', paddingBottom: '40px', borderBottom:'5px solid #0f0f49' , borderTop:'5px solid #0f0f49'}}>
         <div className='container'>
-          <p className='text-center' style={{ fontSize: '40px', fontWeight: '900' }}>What we do?</p>
+          <p className='text-center heading'>What we do?</p>
           <p className='text-center'>We take ideas and convert them into extraordinary visuals. With nearly 22 years of web / app and graphic design experience, Fullestop knows what works and what doesn’t. We’re well equipped to handle all sorts of projects ranging from simple brochure site to complex e-commerce site.</p>
           <div className="container mt-5">
             <Swiper
@@ -78,8 +97,8 @@ export default function BrandingAndIdentity() {
               {cardData.map((card, index) => (
                 <SwiperSlide key={index} className="swiper-slide" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                   <div className='card' style={{ border: '2px solid #bdbdbd', borderRadius: '10px', minHeight: '280px' }}>
-                    <div className='card-body' style={{padding:'20px'}}>
-                      <p style={{fontSize:'24px', fontWeight:'700'}}>{card.heading}</p>
+                    <div className='card-body' style={{ padding: '20px' }}>
+                      <p style={{ fontSize: '24px', fontWeight: '700' }}>{card.heading}</p>
                       <p>{card.paragraph}</p>
                     </div>
                   </div>
@@ -90,10 +109,10 @@ export default function BrandingAndIdentity() {
         </div>
       </div>
 
-      <div className='container' style={{ marginTop: '50px' }}>
+      <div className='container' style={{ marginTop: '50px',marginBottom:'50px' }}>
         <div className='d-flex justify-content-center'>
-          <div className='col-md-5'>
-            <p className='text-center' style={{ fontSize: '32px', fontWeight: '900', marginBottom: '0px' }}>Web design services to augment your online presence</p>
+          <div className='col-md-6'>
+            <p className='text-center heading' style={{marginBottom: '0px' }}>Web design services to augment your online presence</p>
           </div>
         </div>
         <div className='row'>
@@ -127,6 +146,7 @@ const data = [
     paragraph: "Give your existing website a contemporary look without changing its functionality. Fullestop provides website redesign services to those who are not satisfied with the current look of their websites. We can give your site a refresh which is clean and appealing."
   }
 ]
+
 
 const cardData = [
   {

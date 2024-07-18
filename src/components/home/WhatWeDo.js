@@ -93,7 +93,7 @@ export default function WhatWeDo() {
         </div>
       </section>
 
-      <section id='WebDevelopment' style={{ paddingTop: '50px' }}>
+      <section id='WebDevelopment' style={{ paddingTop: '80px' }}>
         <div className='row imageContainer' style={{ marginTop: '40px' }}>
           <div className='col-md-6 order-2 order-md-1 d-flex align-items-center'>
             <div ref={webTextRef}>
@@ -116,7 +116,7 @@ export default function WhatWeDo() {
         </div>
       </section>
 
-      <section id='mobileDevelopment' style={{ paddingTop: '50px' }}>
+      <section id='mobileDevelopment' style={{ paddingTop: '90px' }}>
         <div className='row imageContainer' style={{ marginTop: '40px' }}>
           <div className='col-md-6 my-2' >
             <img className='imageDesign' ref={mobileImageRef} style={{ width: '100%', height: mobileImageHeight }} src='/Images/Service/services-front3.webp' alt='seatechanalytics' />
