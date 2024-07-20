@@ -35,11 +35,17 @@ export default function It() {
         };
 
         window.addEventListener('resize', handleResize);
-        document.querySelector('#consultingIT').addEventListener('shown.bs.modal', handleModalShown);
+
+        const modalElement = document.querySelector('#consultingIT');
+        if (modalElement) {
+            modalElement.addEventListener('shown.bs.modal', handleModalShown);
+        }
 
         return () => {
             window.removeEventListener('resize', handleResize);
-            document.querySelector('#consultingIT').removeEventListener('shown.bs.modal', handleModalShown);
+            if (modalElement) {
+                modalElement.removeEventListener('shown.bs.modal', handleModalShown);
+            }
         };
     }, []);
 
@@ -141,7 +147,7 @@ export default function It() {
                                             <p style={{ fontSize: '30px', fontWeight: '900' }}>Our IT managed services enable you to</p>
                                             <p>Hiring our managed IT services ensures you focus on your business and leave everything else to us. Our packages are tailor-made to meet your specific needs & budget. Fullestop managed IT services can be delivered 24 hours a day, and 365 days a year.</p>
                                             {service.map((support, index) => (
-                                                <div style={{display: 'flex' }} key={index}>
+                                                <div style={{ display: 'flex' }} key={index}>
                                                     <p className="checkmark">✔  </p><p className="text ms-1">{support}</p>
                                                 </div>
                                             ))}

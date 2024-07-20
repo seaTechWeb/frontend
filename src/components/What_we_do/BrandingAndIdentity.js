@@ -51,7 +51,7 @@ export default function BrandingAndIdentity() {
           <div className='row'>
             <div className='col-md-6 d-flex align-items-center' style={{ minHeight: '450px', paddingTop: '40px', color: 'white' }}>
               <div>
-                <p className='bannerDesign'>We Design the Trend</p>
+                <p className='bannerHeading'>We Design the Trend</p>
                 <p>Simplifying web experience with design since 2000</p>
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function BrandingAndIdentity() {
         <div className='row'>
           {data.map((item, index) => (
             <div className='col-md-4' style={{ marginTop: '40px' }} key={index}>
-              <div className='card card-body' style={{ border: '2px solid #bdbdbd', borderRadius: '10px', minHeight: '410px' }}>
+              <div className='card card-body cardDesign' style={{ minHeight: '410px' }}>
                 <p style={{ fontSize: '24px', fontWeight: '600', marginBottom: '1px' }}>{item.heading}</p>
                 <p style={{ fontSize: '24px', fontWeight: '900' }}>design</p>
                 <p style={{ fontSize: '18px', fontWeight: '400' }}>{item.paragraph}</p>

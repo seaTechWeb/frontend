@@ -121,7 +121,7 @@ export default function DigitalMarketing() {
           <ul className="d-flex flex-wrap justify-content-center iconlisting-card">
             {seoSolutions.map((solution, index) => (
               <li
-                className="d-flex align-items-center justify-content-center"
+                className="d-flex align-items-center justify-content-center iconCardDesign"
                 key={index}
               >
                 <figure>

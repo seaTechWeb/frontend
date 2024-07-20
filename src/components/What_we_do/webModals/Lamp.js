@@ -1,55 +1,96 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 import ContactPage from '../../ContactPage';
 
 export default function Lamp() {
+  const textRef1 = useRef(null);
+  const imageRef1 = useRef(null);
+  const [imageHeight1, setImageHeight1] = useState('auto');
+
+  const textRef2 = useRef(null);
+  const imageRef2 = useRef(null);
+  const [imageHeight2, setImageHeight2] = useState('auto');
+
+  const updateImageHeights = () => {
+    if (textRef1.current && imageRef1.current) {
+      const textHeight1 = textRef1.current.offsetHeight;
+      setImageHeight1(`${textHeight1 + 60}px`);
+    }
+    if (textRef2.current && imageRef2.current) {
+      const textHeight2 = textRef2.current.offsetHeight;
+      setImageHeight2(`${textHeight2 + 60}px`);
+    }
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      updateImageHeights();
+    };
+
+    // Update heights on mount
+    updateImageHeights();
+
+    // Attach resize event listener
+    window.addEventListener('resize', handleResize);
+
+    // Attach Bootstrap modal event listeners
+    const modalElement = document.getElementById('webLamp');
+    modalElement.addEventListener('shown.bs.modal', updateImageHeights);
+    modalElement.addEventListener('hidden.bs.modal', updateImageHeights);
+
+    // Cleanup event listeners on unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      modalElement.removeEventListener('shown.bs.modal', updateImageHeights);
+      modalElement.removeEventListener('hidden.bs.modal', updateImageHeights);
+    };
+  }, []);
+
   return (
     <div>
       <div data-bs-toggle="modal" className='' data-bs-target="#webLamp">
-        <button type="button" className="btn btn-dark">Learn more &rarr;</button>
+        <button type="button" className="btn blueButton">Learn more &rarr;</button>
       </div>
       <div className="modal fade" id="webLamp" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog modal-fullscreen">
           <div className="modal-content">
-            <div className="modal-header">
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div className="modal-header" style={{ backgroundColor: '#0f0f49', border: 'none' }}>
+              <button type="button" className="btn-close greenButton" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div className="modal-body">
-              <div style={{ backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 1.8), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(/Images/Whatwedo/WebImage/Lamp/lamp-banner-bg.jpg)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
+            <div className="modal-body" style={{ padding: '0px' }}>
+              <div className='borderBottom' style={{ backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 1.8), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(/Images/Whatwedo/WebImage/Lamp/lamp-banner-bg.jpg)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
                 <div className='container'>
                   <div className='row'>
-                    <div className='col-md-6 ' style={{ minHeight: '450px', paddingTop: '40px', color: 'white' }}>
-                      <div className='d-flex align-self-center' style={{ display: 'flex', alignContent: 'center' }}>
-                        <div>
-                          <p style={{ fontSize: '18px', marginBottom: '0px' }}>Web development services</p>
-                          <p style={{ fontSize: '60px', fontWeight: '900', marginBottom: '0px' }}>LAMP and PHP web development company</p>
-                          <p style={{ fontSize: '18px', marginBottom: '0px' }}>LAMP developers helps you to get the best module for your project</p></div>
-                      </div>
+                    <div className='col-md-6 d-flex align-items-center' style={{ minHeight: '450px', paddingTop: '40px', color: 'white' }}>
+                      <div>
+                        <p style={{ fontSize: '18px', marginBottom: '0px' }}>Web development services</p>
+                        <p className='bannerHeading' style={{ marginBottom: '0px' }}>LAMP and PHP web development company</p>
+                        <p style={{ fontSize: '18px', marginBottom: '0px' }}>LAMP developers helps you to get the best module for your project</p></div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='container' style={{ marginTop: '40px' }}>
-                <div className='row'>
+              <div className='container' style={{ marginTop: '60px' }}>
+                <div className='row imageContainer'>
                   <div className='col-md-6 d-flex align-items-center'>
-                    <div>
-                      <p style={{ fontSize: '40px', fontWeight: '900' }}>LAMP and PHP web development services</p>
+                    <div ref={textRef1}>
+                      <p className='heading'>LAMP and PHP web development services</p>
                       <p>Fullestop offers custom LAMP (Linux, Apache, MySQL, PHP) development solutions to help you with your offshore development, programming and e-commerce requirements.</p>
                       <p>Our team of dedicated LAMP developers helps you to get the best module for your project. We can take an entire project or complete a project at any phase of the development cycle.</p>
                     </div>
                   </div>
                   <div className='col-md-6'>
-                    <img style={{ borderRadius: '10px', minHeight: '300px', maxHeight: '550px', maxWidth: "100%" }} src='/Images/Whatwedo/WebImage/Lamp/lamp-web-development-services-1.webp' alt='' />
+                    <img className='imageDesign' ref={imageRef1} style={{ borderRadius: '10px',  width: "100%", height: imageHeight1 }} src='/Images/Whatwedo/WebImage/Lamp/lamp-web-development-services-1.webp' alt='' />
                   </div>
                 </div>
               </div>
-              <div className='container' style={{ marginTop: '40px' }}>
-                <div className='row'>
+              <div className='container' style={{ marginTop: '60px' }}>
+                <div className='row imageContainer'>
                   <div className='col-md-6'>
-                    <img style={{ borderRadius: '10px', minHeight: '300px', maxWidth: "100%" }} src='/Images/Whatwedo/WebImage/Lamp/expert-discuss-development.webp' alt='' />
+                    <img className='imageDesign' ref={imageRef2} style={{ borderRadius: '10px',width: "100%", height: imageHeight2 }} src='/Images/Whatwedo/WebImage/Lamp/expert-discuss-development.webp' alt='' />
                   </div>
                   <div className='col-md-6 d-flex align-items-center'>
-                    <div>
-                      <p style={{ fontSize: '40px', fontWeight: '900' }}>Our technical
+                    <div ref={textRef2}>
+                      <p className='heading'>Our technical
                         expertise</p>
                       <p>With an extensive experience in the industry, we know the best of PHP MySQL development and produce unmatchable quality solutions at most affordable prices.</p>
                       <p>Our PHP MySQL portfolio includes enterprise solutions like Ecommerce, online accounting software, community tools, bulletin boards, webmails, web calendar and discussion forums. With intensive knowledge about LAMP technology, our team of LAMP developers builds huge websites with undulating maintenance services.</p>
@@ -58,10 +99,9 @@ export default function Lamp() {
                       </p>
                     </div>
                   </div>
-
                 </div>
               </div>
-              <div style={{ backgroundColor: '#ececec', paddingTop: '10px', marginTop: '40px', paddingBottom: '20px' }}>
+              <div style={{ backgroundColor: '#ececec', paddingTop: '10px', marginTop: '60px', paddingBottom: '60px' }}>
                 <div className="container" style={{ backgroundColor: '#ececec' }}>
                   <div className="row" style={{ marginTop: '40px' }}>
                     <div className="col-lg-6 col-xl-7 pe-xl-5 align-self-center">
@@ -130,7 +170,7 @@ export default function Lamp() {
                                   alt="solutons"
                                   loading="lazy"
                                   width="100%"
-                                  style={{ border: 'none', borderRadius: '10px', color: 'red' }}
+                                  style={{ border: 'none', borderRadius: '10px', color: 'red', height: index === 0 ? imageHeight1 : imageHeight2 }}
                                 />
                               </div>
                             </div>
@@ -143,8 +183,8 @@ export default function Lamp() {
               </div>
               <ContactPage />
             </div>
-            <div className="modal-footer text-center">
-              <button type="button" className="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            <div className="modal-footer text-center" style={{ backgroundColor: '#0f0f49', border: 'none' }}>
+              <button type="button" className="btn greenButton" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>

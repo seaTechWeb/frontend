@@ -38,10 +38,10 @@ export default function Adidas() {
                     <div className="modal fade" id="companyAdidas" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div className="modal-dialog modal-fullscreen">
                             <div className="modal-content">
-                                <div className="modal-header">
-                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div className="modal-header" style={{ backgroundColor: '#0f0f49', border: 'none' }}> 
+                                    <button type="button" className="btn-close greenButton" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div className="modal-body" style={{backgroundColor:'black'}}>
+                                <div className="modal-body" style={{paddingLeft:'0px',backgroundColor:'#0f0f49'}}>
                                     <div className='row'>
                                         <div className='col-md-6 d-flex justify-content-center' style={{ backgroundColor: 'black', height: `${deviceSize === 1?'' : 'calc(100vh - 160px)'}` }}>
                                             <div className='align-self-center' style={{ width: '90%' }}>
@@ -76,8 +76,8 @@ export default function Adidas() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="modal-footer text-center">
-                                    <button type="button" className="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                                <div className="modal-footer text-center" style={{ backgroundColor: '#0f0f49', border: 'none' }}>
+                                    <button type="button" className="btn greenButton" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>

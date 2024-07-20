@@ -17,11 +17,17 @@ export default function Teams() {
         };
 
         window.addEventListener('resize', handleResize);
-        document.querySelector('#consultingTeams').addEventListener('shown.bs.modal', handleModalShown);
+
+        const modalElement = document.querySelector('#consultingTeams');
+        if (modalElement) {
+            modalElement.addEventListener('shown.bs.modal', handleModalShown);
+        }
 
         return () => {
             window.removeEventListener('resize', handleResize);
-            document.querySelector('#consultingTeams').removeEventListener('shown.bs.modal', handleModalShown);
+            if (modalElement) {
+                modalElement.removeEventListener('shown.bs.modal', handleModalShown);
+            }
         };
     }, []);
 
@@ -65,7 +71,7 @@ export default function Teams() {
                                 </div>
                             </div>
                             <div className='container' style={{ marginTop: '40px' }}>
-                                <p style={{  marginBottom: '0px' }} className='text-center heading'>Dedicated development team</p>
+                                <p style={{ marginBottom: '0px' }} className='text-center heading'>Dedicated development team</p>
                                 <p className='text-center'>Fullestop has teams of experienced web designers, developers, project managers, IT consultants, network managers, business analysts, quality analysts, and internet marketing professionals. Experts with the desired skill set can be made available at your disposal at a fixed monthly cost.</p>
                                 <div className="customerneed-section">
                                     <ul className="d-flex flex-wrap justify-content-center iconlisting-card">
@@ -80,8 +86,8 @@ export default function Teams() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className='container' style={{ marginTop: '60px',marginBottom:'60px' }}>
-                                <p style={{marginBottom: '0px' }} className='text-center heading'>Hire skills</p>
+                            <div className='container' style={{ marginTop: '60px', marginBottom: '60px' }}>
+                                <p style={{ marginBottom: '0px' }} className='text-center heading'>Hire skills</p>
                                 <p className='text-center'>At fullestop, we offer dedicated team to hire with various skills:</p>
                                 <div className="customerneed-section">
                                     <ul className="d-flex flex-wrap justify-content-center iconlisting-card">

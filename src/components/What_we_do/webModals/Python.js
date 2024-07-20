@@ -4,15 +4,15 @@ export default function Python() {
   return (
     <div>
       <div data-bs-toggle="modal" className='' data-bs-target="#webPython">
-        <button type="button" className="btn btn-dark">Learn more &rarr;</button>
+        <button type="button" className="btn blueButton">Learn more &rarr;</button>
       </div>
       <div className="modal fade" id="webPython" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog modal-fullscreen">
           <div className="modal-content">
-            <div className="modal-header">
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div className="modal-header" style={{ backgroundColor: '#0f0f49', border: 'none' }}>
+              <button type="button" className="btn-close greenButton" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div className="modal-body">
+            <div className="modal-body" style={{ padding: '0px' }}>
             <div style={{ backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 1.8), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(/Images/Whatwedo/WebImage/Python/python-banner.jpg)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
                 <div className='container'>
                   <div className='row'>
@@ -43,8 +43,8 @@ export default function Python() {
                 </div>
               </div>
             </div>
-            <div className="modal-footer text-center">
-              <button type="button" className="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            <div className="modal-footer text-center" style={{ backgroundColor: '#0f0f49', border: 'none' }}>
+              <button type="button" className="btn greenButton" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
