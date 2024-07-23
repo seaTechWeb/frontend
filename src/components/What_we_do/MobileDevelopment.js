@@ -1,6 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react'
 import ContactUs from "../ContactPage"
-
+import ReactNative from './MobileModal/ReactNative';
+import Flutter from './MobileModal/Flutter';
+import Xamarin from './MobileModal/Xamarin';
+import Android from './MobileModal/Android';
+import MobileApp from './MobileModal/MobileApp'
+import IOS from './MobileModal/IOS';
 
 export default function MobileDevelopment() {
   const [ios, setIos] = useState(true);
@@ -68,7 +73,7 @@ export default function MobileDevelopment() {
         <div className='row'>
           {data.map((item, index) => (
             <div className='col-md-4' style={{ marginBottom: '40px' }} key={index} >
-              <div className="card cardDesign" style={{minHeight:'425px'}}>
+              <div className="card cardDesign" style={{ minHeight: '380px' }}>
                 <div className="card-body">
                   <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
                     <image href={item.link} x="0" y="0" width="100" height="100" />
@@ -81,7 +86,7 @@ export default function MobileDevelopment() {
                   <p className="card-text">
                     {item.text}
                   </p>
-                  <a href="/" className="btn blueButton webDeveloper">Learn more &rarr;</a>
+                  {item.component}
                 </div>
               </div>
             </div>
@@ -89,7 +94,6 @@ export default function MobileDevelopment() {
 
         </div>
       </div>
-
       <div style={{ marginTop: '60px', paddingTop: '50px', backgroundColor: 'black', color: 'whitesmoke' }}>
         <div className='container'>
           <div className="header text-center">
@@ -120,13 +124,13 @@ export default function MobileDevelopment() {
           </div>
         </div>
       </div>
-      <div className='container' style={{marginTop:'60px'}}>
+      <div className='container' style={{ marginTop: '60px' }}>
         <div className="customerneed-section">
           <h2 className="heading text-center">How we work?</h2>
           <ul className="d-flex flex-wrap justify-content-center iconlisting-card">
             {steps.map((solution, index) => (
               <li
-                className="d-flex align-items-center justify-content-center"
+                className="d-flex align-items-center justify-content-center iconCardDesign"
                 key={index}
               >
                 <figure>
@@ -139,7 +143,7 @@ export default function MobileDevelopment() {
         </div>
       </div>
 
-      <div style={{paddingTop: '30px',marginTop:'50px', backgroundColor: 'black', color: 'whitesmoke' }}>
+      <div style={{ paddingTop: '30px', marginTop: '50px', backgroundColor: 'black', color: 'whitesmoke' }}>
         <div className='container'>
           <div className='d-flex justify-content-center'>
             <p className='heading' style={{ marginRight: '20px' }}>Our</p>
@@ -156,7 +160,7 @@ export default function MobileDevelopment() {
           <div style={{ marginTop: '30px' }}>
             {ios === true ?
               <div className="customerneed-section">
-                <ul className="d-flex flex-wrap justify-content-center iconlisting-card" style={{marginBottom:'0px'}}>
+                <ul className="d-flex flex-wrap justify-content-center iconlisting-card" style={{ marginBottom: '0px' }}>
                   {iOSIcon.map((solution, index) => (
                     <li
                       className="d-flex align-items-center justify-content-center"
@@ -173,7 +177,7 @@ export default function MobileDevelopment() {
               </div>
               :
               <div className="customerneed-section">
-                <ul className="d-flex flex-wrap justify-content-center iconlisting-card" style={{marginBottom:'0px'}}>
+                <ul className="d-flex flex-wrap justify-content-center iconlisting-card" style={{ marginBottom: '0px' }}>
                   {androidIcon.map((solution, index) => (
                     <li
                       className="d-flex align-items-center justify-content-center"
@@ -310,37 +314,48 @@ const data = [
     link: "/Images/Whatwedo/ios-icon.svg",
     language: "iOS app",
     type: "Development",
-    text: "In the era of iOS and iPhone Apps where everything is at the touch of your thumb, businesses can actually take the leverage of this smart technology to..."
+    text: "In the era of iOS and iPhone Apps where everything is at the touch of your thumb, businesses can actually take the leverage of this smart technology to...",
+    component:<IOS/>
+
   },
   {
     link: "/Images/Whatwedo/android_icon.svg",
     language: "Android app",
     type: "Development",
-    text: "SeaTech renders qualitative android solutions to enterprises across the globe. We have proven expertise in developing Android applications that..."
+    text: "SeaTech renders qualitative android solutions to enterprises across the globe. We have proven expertise in developing Android applications that...",
+    component: <Android />
+
   },
   {
     link: "/Images/Whatwedo/react-native-icon.svg",
     language: "React native",
     type: "Development",
-    text: "An astronomical rise in the Mobile trend has transformed the way Businesses interact with their customers..."
+    text: "An astronomical rise in the Mobile trend has transformed the way Businesses interact with their customers...",
+    component: <ReactNative />
+
   },
   {
     link: "/Images/Whatwedo/flutter_icon.svg",
     language: "Flutter app",
     type: "Development",
-    text: "The digital world is spinning towards making the Mobile App development more productive and economical for modern Businesses. Hybrid mobile app..."
+    text: "The digital world is spinning towards making the Mobile App development more productive and economical for modern Businesses. Hybrid mobile app...",
+    component: <Flutter />
+
   },
   {
     link: "/Images/Whatwedo/xamarin-icon.svg",
     language: "Xamarin app",
     type: "Development",
-    text: "HIn the era of Xamarin and Xamarin Apps where everything is at the touch of your thumb, businesses can actually take the leverage of this smart..."
+    text: "HIn the era of Xamarin and Xamarin Apps where everything is at the touch of your thumb, businesses can actually take the leverage of this smart...",
+    component: <Xamarin />
+
   },
   {
     link: "/Images/Whatwedo/app-support-icon.svg",
     language: "Mobile app",
     type: "Support & Maintenance",
-    text: "According to an IT survey, a typical large enterprise today spends up to 80% of their IT budget on maintenance and support of their existing systems...."
+    text: "According to an IT survey, a typical large enterprise today spends up to 80% of their IT budget on maintenance and support of their existing systems....",
+    component: <MobileApp />
   }
 ]
 

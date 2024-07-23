@@ -181,7 +181,7 @@ export default function DigitalMarketing() {
             <p className='text-center heading'>Why choose SeaTech for digital marketing services?</p>
           </div>
         </div>
-        <div className="mt-2">
+        <div className="mt-2" style={{paddingBottom:'20px'}}>
           <Swiper
             onSwiper={setSwiperInstance}
             spaceBetween={25}
@@ -201,8 +201,8 @@ export default function DigitalMarketing() {
             className="swiper-container"
           >
             {cardData.map((card, index) => (
-              <SwiperSlide key={index} className="swiper-slide" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <div className='card' style={{ border: '2px solid #bdbdbd', borderRadius: '10px', minHeight: '280px' }}>
+              <SwiperSlide  key={index} className="swiper-slide" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                <div  className='card cardDesign' style={{  minHeight: '280px' }}>
                   <div className='card-body' style={{ padding: '20px' }}>
                     <p style={{ fontSize: '24px', fontWeight: '700' }}>{card.heading}</p>
                     <p>{card.paragraph}</p>

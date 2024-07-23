@@ -59,8 +59,10 @@ section {
   color: #000000;
   transition: all 0.3s ease;
   position: absolute;
+  
 }
 .swiper-container .swiper-button-prev {
+ 
   left: -5px; 
 }
 .swiper-container .swiper-button-next {
@@ -200,4 +202,16 @@ section {
 .iconCardDesign > * {
   position: relative;
   z-index: 1;
+}
+
+/* TabStyles.css */
+.custom-tabs .nav-item .nav-link {
+  border: 1px solid rgb(255, 255, 255) !important; /* Black border around each tab button */
+  margin: 5px;
+  color: white;
+}
+
+.custom-tabs .nav-item .nav-link.active {
+  background-color: #59B702 !important; /* Green background for active tab */
+  color: white !important; /* Optional: white text color for better contrast */
 }

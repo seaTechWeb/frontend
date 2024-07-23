@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="365" height="365" viewBox="0 0 365 365">
+  <defs>
+    <clipPath id="clip-coredata-icon">
+      <rect width="365" height="365"/>
+    </clipPath>
+  </defs>
+  <g id="coredata-icon" clip-path="url(#clip-coredata-icon)">
+    <g id="coredata-icon-2" data-name="coredata-icon" transform="translate(-18 -21)">
+      <g id="Group_1" data-name="Group 1" transform="translate(36 21)">
+        <path id="Path_1" data-name="Path 1" d="M40.4,281.276V118.37L200.4,26l158.988,87V280.268L199.836,379.58Z" transform="translate(-35.474 -20.402)" fill="#2e87c8"/>
+        <path id="Path_2" data-name="Path 2" d="M200.922,32.308l153.949,84.2V278.179L200.362,374.356,45.853,278.963v-157.2L200.922,32.308M200.81,21,36,116.057v168.5L200.362,386,364.836,283.666V110.683L200.81,21Z" transform="translate(-36 -21)" fill="#094b7c"/>
+      </g>
+      <path id="Path_3" data-name="Path 3" d="M104.944,141.485s-11.2-34.037,82.517-37.284c0,0,64.491-1.567,83.077,28.215L248.145,261.846s-10.636,19.706-60.684,22.952c0,0-49.04,7.5-72.44-36.724l-2.127-30.118s30.9,46.913,101.775,31.462l.224-81.733-27.319-35.156C187.573,132.416,110.879,141.6,104.944,141.485Z" transform="translate(8.198 9.952)" fill="#fff"/>
+      <path id="Path_4" data-name="Path 4" d="M116.5,145.733,184.014,137l19.146,28.439S136.989,168.462,116.5,145.733Z" transform="translate(9.63 13.877)" fill="#094b7c"/>
+      <path id="Path_5" data-name="Path 5" d="M115.7,154.8s31.238,20.265,89.459,17.242v64.491H176.272s-46.689-3.023-55.982-29.11Z" transform="translate(9.535 16.007)" fill="#094b7c"/>
+    </g>
+  </g>
+</svg>

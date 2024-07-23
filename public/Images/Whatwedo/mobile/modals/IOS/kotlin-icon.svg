@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="365" height="365" viewBox="0 0 365 365">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.967" cy="0.041" r="1.144" gradientTransform="translate(0.001 0.001)" gradientUnits="objectBoundingBox">
+      <stop offset="0.003" stop-color="#ef4857"/>
+      <stop offset="0.469" stop-color="#d211ec"/>
+      <stop offset="1" stop-color="#7f52ff"/>
+    </radialGradient>
+    <clipPath id="clip-kotlin-icon">
+      <rect width="365" height="365"/>
+    </clipPath>
+  </defs>
+  <g id="kotlin-icon" clip-path="url(#clip-kotlin-icon)">
+    <path id="kotlin-icon-2" data-name="kotlin-icon" d="M399.209,399.26H34.8v-365H399.209L213.228,214.127Z" transform="translate(-34.209 -34.26)" fill="url(#radial-gradient)"/>
+  </g>
+</svg>
