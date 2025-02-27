@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function OurCompany() {
     return (
-        <section id='ourCompany' style={{paddingTop:'65px' }} >
+        <section id='ourCompanies' style={{paddingTop:'65px' }} >
             <div style={{ backgroundColor: '#e9e9e9', paddingTop: '20px',paddingBottom:'50px', marginTop: '30px' , borderTop:'5px solid #0f0f49', borderBottom:'5px solid #0f0f49'}}>
                 <div className='container' >
                     <h1 className='text-center more-weight' >Our Company</h1>
@@ -19,24 +19,19 @@ export default function OurCompany() {
                                         </div>
                                         <div className="modal-body">
                                             <div className='container  my-4'>
-                                                <h1 className='text-center'>SOMPO JAPAN INSURANCE INC.</h1>
+                                                <h1 className='text-center'>NATIONWIDE DRUG CENTERS.</h1>
                                                 <hr />
                                                 <div className='text-center'><img style={{ maxWidth: '90%', width: '450px', margin: '30px' }} src="./Images/sompo_350x205.png" alt='SOMPO JAPAN INSURANCE INC.' /></div>
-                                                <p>Sompo Japan Insurance Inc, formerly called The Yasuda Fire and Marine Insurance Company, Ltd. was established since 1888, is one of the three largest non-life insurers in Japan. It has total assets of USD 28 billion and net premium income of USD 7.1 billion (1998). The company has become a major player in worldwide insurance market with its network of forty International offices across five continents. Despite Asia's financial crisis (1997), Sompo Japan remains committed to the region, establishing strong presence in China, India, Indonesia, Malaysia, Myanmar, Philippines, Singapore, Thailand and Vietnam
+                                                <p>  NATIONWIDE DRUG CENTERS(NDC) was founded in 2016 by two college friends with a background in the trucking industry. Having owned and managed their own fleet, they experienced firsthand the challenges of maintaining compliance with drug and alcohol testing regulations. Recognizing a gap in the market, they saw an opportunity to leverage technology to streamline the testing process, specifically catering to trucking companies.
                                                 </p>
                                                 <br />
-                                                <p>SeaTech is the leading Information Technology provider to Sompo Japan in its endeavor to leverage technology in managing and controlling its expansive network of offices across Asia and Europe.</p>
+                                                <p>Seatech Consulting is the leading Information Technology provider to Nationwide Drug Centers in its endeavor to leverage technology in managing and controlling its expansive network of lab collections. With a deep understanding of industry requirements and regulatory compliance, they developed a tech-driven platform designed to simplify drug testing for trucking businesses. Their solution provides efficient scheduling, tracking, and compliance management, helping companies stay ahead of DOT regulations. Over the years, NDC has built a reputation for reliability, accuracy, and exceptional service, becoming a trusted partner for fleets nationwide.</p>
                                                 <br />
-                                                <p>AeGIS<sup>TM</sup> and IRIS<sup>TM</sup>, SeaTech's advanced insurance and reinsurance solutions, are the anchor in Sompo Japan's information technology strategy. Both systems have been implemented in several of Sompo Japan's offices across Asia and will become the core technology to support Sompo Japan's operations throughout the region</p>
+                                                <p>AeGIS<sup>TM</sup> and IRIS<sup>TM</sup>, Seatech Consulting's advanced insurance and reinsurance solutions, are the anchor in Sompo Japan's information technology strategy. Both systems have been implemented in several of Sompo Japan's offices across Asia and will become the core technology to support Sompo Japan's operations throughout the region</p>
                                                 <br />
-                                                <p>Consistent with SeaTech's management philosophy of working closely with its clients, SeaTech's professional team collaborated with Sompo Japan's staff across the region to ensure the proper implementation and maintenance of AeGIS<sup>TM</sup> and IRIS<sup>TM</sup>. By employing a win-win strategy, Sompo Japan has the flexibility to independently produce statistics and reports from both systems, while at the same time, rely on SeaTech to continuously evolve the core platform of AeGIS<sup>TM</sup> and IRIS<sup>TM</sup>.
-                                                </p>
-                                                <br />
-                                                <p>AeGIS<sup>TM</sup> and IRIS<sup>TM</sup> have enabled Sompo Japan Insurance Inc. to better oversee and manage its businesses across Asia and Europe. Top executives can assess profit, loss and risks more effectively thanks to detailed, accurate statistic reports. The whole insurance process, from underwriting to claims to reinsurance to accounting, can be done more efficiently with re-engineered workflow.</p>
-                                                <br />
-                                                <p>With SeaTech as a partner, Sompo Japan gets IT right!</p>
+                                                <p>With Seatech Consulting Consulting as a partner, NDC gets IT right!</p>
                                                 <div className='text-center'>
-                                                    Client : <a href="http://www.sjnk.co.id/" target='_blank' rel="noreferrer">SOMPO JAPAN INSURANCE INC.</a>
+                                                    Client : <a href="http://www.nwdrugtesting.com" target='_blank' rel="noreferrer">NATIONWIDE DRUG CENTERS</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -62,7 +57,7 @@ export default function OurCompany() {
                                                 <h1 className='text-center'>Blue Bird Taxi Mobile Reservation System</h1>
                                                 <hr />
                                                 <div className='text-center'><img style={{ maxWidth: '90%', width: '450px', margin: '30px' }} src="/Images/Feature client/350x205_bluebird.png" alt='Blue Bird Taxi Mobile Reservation System' /></div>
-                                                <p>Blue Bird Taxi had more than 300 telephone lines to handle taxi orders in Jakarta.During rush hour, Blue Bird Taxi’s telephone lines were frequently jammed, resulting in lost businesses and customer complaints.In 2011,seatechmobile proposed to Blue Bird taxi to launch a mobile app to alleviate this problem.
+                                                <p>Blue Bird Taxi had more than 300 telephone lines to handle taxi orders in Jakarta.During rush hour, Blue Bird Taxi’s telephone lines were frequently jammed, resulting in lost businesses and customer complaints.In 2011,Seatech Consultingmobile proposed to Blue Bird taxi to launch a mobile app to alleviate this problem.
                                                 </p>
                                                 <br />
                                                 <p>Orders through mobile app are fed directly to Blue Bird Taxi’s servers, bypassing Blue Bird Taxi’s telephone switchboard. A customer who orders a taxi through the mobile app can also track the movement of the taxi assigned to him using Google map. In traffic jam prevalent Jakarta, this feature is handy; it reassures the customer that a taxi is on its way. As the customer waits, he can monitor the taxi heading to his location. The taxi driver can also call the customer’s mobile phone if he can’t find the address and vice-versa if the customer needs to contact the driver for additional direction. Blue Bird Taxi mobile app is now available on iOS, Android and Blackberry and cover major cities in Indonesia.</p>
@@ -70,7 +65,7 @@ export default function OurCompany() {
                                                 <p>With over 750,000 downloads, the apps have become indispensable to many residents and expats in Indonesia.</p>
                                                 <div className='text-center'>
                                                     <span style={{ marginRight: '10px' }}>Client : <a href="https://www.bluebirdgroup.com/" target='_blank' rel="noreferrer">Bluebird</a></span>
-                                                    <span style={{ marginLeft: '10px' }}>Service : <a href="https://play.google.com/store/apps/details?id=com.seatech.bluebird&hl=en" target='_blank' rel="noreferrer">Android</a></span>
+                                                    <span style={{ marginLeft: '10px' }}>Service : <a href="https://play.google.com/store/apps/details?id=com.Seatech Consulting.bluebird&hl=en" target='_blank' rel="noreferrer">Android</a></span>
                                                     <span style={{ marginLeft: '10px' }}><a href="https://apps.apple.com/id/app/mybluebird-taxi/id476533261" target='_blank' rel="noreferrer"> iOS</a></span>
                                                 </div>
                                             </div>
