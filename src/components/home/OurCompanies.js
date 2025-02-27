@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function OurCompanies() {
     return (
-        <section id='ourCompanies' style={{paddingTop:'65px' }} >
+        <section id='OurCompanies' style={{paddingTop:'65px' }} >
             <div style={{ backgroundColor: '#e9e9e9', paddingTop: '20px',paddingBottom:'50px', marginTop: '30px' , borderTop:'5px solid #0f0f49', borderBottom:'5px solid #0f0f49'}}>
                 <div className='container' >
                     <h1 className='text-center more-weight' >Our Companies</h1>
