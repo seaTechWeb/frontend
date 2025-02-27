@@ -71,7 +71,7 @@ export default function ContactPage() {
                         <p style={{ marginTop: '30px', fontSize: '40px', fontWeight: '800',color:'whitesmoke' }}>Looking for a development services company?</p>
                         <p style={{ marginTop: '30px', fontSize: '20px', fontWeight: '500',color:'whitesmoke' }}>Get a free consultation now.</p>
                         <p style={{ marginTop: '30px', fontSize: '20px', fontWeight: '500',color:'whitesmoke' }}>Please fill the form or send us an email</p>
-                        <a href="mailto:seatech.us@gmail.com" style={{ color: 'blue' }}>seatech.us@gmail.com</a>
+                        <a href="mailto:seatech.us@gmail.com" style={{ color: 'blue' }}>info@seatechconsulting.com</a>
                     </div>
                     <div className='col-md-7' style={{marginTop:'30px'}}>
                         <form onSubmit={handleSubmit}>
