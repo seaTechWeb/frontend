@@ -21,7 +21,7 @@ export default function OurCompanies() {
                                             <div className='container  my-4'>
                                                 <h1 className='text-center'>NATIONWIDE DRUG CENTERS.</h1>
                                                 <hr />
-                                                <div className='text-center'><img style={{ maxWidth: '90%', width: '450px', margin: '30px' }} src="./Images/sompo_350x205.png" alt='SOMPO JAPAN INSURANCE INC.' /></div>
+                                                <div className='text-center'><img style={{ maxWidth: '90%', width: '450px', margin: '30px' }} src="./Images/sompo_350x205.png" alt='NATIONWIDE DRUG CENTERS.' /></div>
                                                 <p>  NATIONWIDE DRUG CENTERS(NDC) was founded in 2016 by two college friends with a background in the trucking industry. Having owned and managed their own fleet, they experienced firsthand the challenges of maintaining compliance with drug and alcohol testing regulations. Recognizing a gap in the market, they saw an opportunity to leverage technology to streamline the testing process, specifically catering to trucking companies.
                                                 </p>
                                                 <br />
