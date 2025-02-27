@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function OurCompany() {
+export default function OurCompanies() {
     return (
         <section id='ourCompanies' style={{paddingTop:'65px' }} >
             <div style={{ backgroundColor: '#e9e9e9', paddingTop: '20px',paddingBottom:'50px', marginTop: '30px' , borderTop:'5px solid #0f0f49', borderBottom:'5px solid #0f0f49'}}>
