@@ -27,8 +27,6 @@ export default function OurCompanies() {
                                                 <br />
                                                 <p>Seatech Consulting is the leading Information Technology provider to Nationwide Drug Centers in its endeavor to leverage technology in managing and controlling its expansive network of lab collections. With a deep understanding of industry requirements and regulatory compliance, they developed a tech-driven platform designed to simplify drug testing for trucking businesses. Their solution provides efficient scheduling, tracking, and compliance management, helping companies stay ahead of DOT regulations. Over the years, NDC has built a reputation for reliability, accuracy, and exceptional service, becoming a trusted partner for fleets nationwide.</p>
                                                 <br />
-                                                <p>AeGIS<sup>TM</sup> and IRIS<sup>TM</sup>, Seatech Consulting's advanced insurance and reinsurance solutions, are the anchor in Sompo Japan's information technology strategy. Both systems have been implemented in several of Sompo Japan's offices across Asia and will become the core technology to support Sompo Japan's operations throughout the region</p>
-                                                <br />
                                                 <p>With Seatech Consulting Consulting as a partner, NDC gets IT right!</p>
                                                 <div className='text-center'>
                                                     Client : <a href="http://www.nwdrugtesting.com" target='_blank' rel="noreferrer">NATIONWIDE DRUG CENTERS</a>
