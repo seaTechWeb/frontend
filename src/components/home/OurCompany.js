@@ -27,7 +27,7 @@ export default function OurCompanies() {
                                                 <br />
                                                 <p>Seatech Consulting is the leading Information Technology provider to Nationwide Drug Centers in its endeavor to leverage technology in managing and controlling its expansive network of lab collections. With a deep understanding of industry requirements and regulatory compliance, they developed a tech-driven platform designed to simplify drug testing for trucking businesses. Their solution provides efficient scheduling, tracking, and compliance management, helping companies stay ahead of DOT regulations. Over the years, NDC has built a reputation for reliability, accuracy, and exceptional service, becoming a trusted partner for fleets nationwide.</p>
                                                 <br />
-                                                <p>With Seatech Consulting Consulting as a partner, NDC gets IT right!</p>
+                                                <p>With Seatech Consulting as a partner, NDC gets IT right!</p>
                                                 <div className='text-center'>
                                                     Client : <a href="http://www.nwdrugtesting.com" target='_blank' rel="noreferrer">NATIONWIDE DRUG CENTERS</a>
                                                 </div>
