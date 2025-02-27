@@ -57,7 +57,7 @@ export default function Navbar() {
                 </ul>
               </li>
               <li className="nav-item mx-3">
-                <HashLink className="nav-link" to="/#ourCompany" onClick={handleNavLinkClick}>Our Company</HashLink>
+                <HashLink className="nav-link" to="/#ourCompanies" onClick={handleNavLinkClick}>Our Companies</HashLink>
               </li>
               <li className="nav-item mx-3">
                 <HashLink className="nav-link" to="/#clients-spotlight" onClick={handleNavLinkClick}>Clients Spotlight</HashLink>
