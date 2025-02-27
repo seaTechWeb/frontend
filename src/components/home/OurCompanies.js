@@ -5,7 +5,7 @@ export default function OurCompanies() {
         <section id='OurCompanies' style={{paddingTop:'65px' }} >
             <div style={{ backgroundColor: '#e9e9e9', paddingTop: '20px',paddingBottom:'50px', marginTop: '30px' , borderTop:'5px solid #0f0f49', borderBottom:'5px solid #0f0f49'}}>
                 <div className='container' >
-                    <h1 className='text-center more-weight' >Our Companies</h1>
+                    <h1 className='text-center more-weight' >OurCompanies</h1>
                     <div className='row'>
                         <div className='col-md-4'>
                             <div data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
