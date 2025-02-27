@@ -4,7 +4,7 @@ import WhatWeDo from './WhatWeDo';
 import ClientSpotlight from './ClientSpotlight';
 import Technology from './Technology';
 import OurStory from './OurStory';
-import OurCompany from './OurCompany';
+import OurCompany from './OurCompanies';
 import ContactPage from '../ContactPage';
 
 export default function Home() {
