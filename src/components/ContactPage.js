@@ -69,9 +69,11 @@ export default function ContactPage() {
                         <p className='text-center' style={{ fontSize: '28px', fontWeight: '900', color: 'whitesmoke' }}>Contact us</p>
                         </div>
                         <p style={{ marginTop: '30px', fontSize: '40px', fontWeight: '800',color:'whitesmoke' }}>Looking for a development services company?</p>
+                        <p style={{ marginTop: '30px', fontSize: '40px', fontWeight: '800',color:'whitesmoke' }}>Call - (206)571-7659</p>
                         <p style={{ marginTop: '30px', fontSize: '20px', fontWeight: '500',color:'whitesmoke' }}>Get a free consultation now.</p>
                         <p style={{ marginTop: '30px', fontSize: '20px', fontWeight: '500',color:'whitesmoke' }}>Please fill the form or send us an email</p>
                         <a href="mailto:info@seatechconsulting.com" style={{ color: 'white' }}>info@seatechconsulting.com</a>
+                        <a href="mailto:info@seatechconsulting.com" style={{ color: 'white' }}>Order@seatechconsulting.com</a>
                     </div>
                     <div className='col-md-7' style={{marginTop:'30px'}}>
                         <form onSubmit={handleSubmit}>
