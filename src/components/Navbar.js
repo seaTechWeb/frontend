@@ -71,6 +71,10 @@ export default function Navbar() {
               <li className="nav-item mx-3">
                 <HashLink className="nav-link" to="/#contactUs" onClick={handleNavLinkClick}>Contact Us</HashLink>
               </li>
+              {/* 🔹 Added Pricing Link */}
+              <li className="nav-item mx-3">
+                <Link className="nav-link" to="/pricing" onClick={handleNavLinkClick}>Pricing</Link>
+              </li>
             </ul>
           </div>
         </div>
