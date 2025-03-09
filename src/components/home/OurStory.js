@@ -174,9 +174,12 @@ export default function OurStory() {
                     <div className={deviceSize === 1 ? 'col-9' : 'col-5'}>
                         <p style={{ marginTop: '30px' }}><b>2008 - mobile</b></p>
                         <p>Anticipating that mobile computing would be mainstream, our mobile division was created in 2008. This division brings SeaTech's decades of experience, knowledge and expertise into the mobile platform. Our mobile team has been involved with every major mobile platform since the very beginning and we have provided solutions to customers across a variety of domains giving us a depth of knowledge and experience. We have also been able to share this expertise with our enterprise Insurance customers thus helping them take advantage of this new paradigm.</p>
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+<stripe-pricing-table pricing-table-id="prctbl_1R0XOkF1XubL36JhxZ8HOt8d"
+publishable-key="pk_live_51R0WXtF1XubL36JhFQE9Tz19XEZA38LRfgp4CvZXB8xRqDogZ1e2tp4jFmFZ8cVBlnlMPfyDHvDuHJ7nrFQrIGus00a5oB0CLi">
+</stripe-pricing-table>
                     </div>
                 </div>
-
 
             </div>
         </section>
