@@ -66,9 +66,6 @@ export default function Navbar() {
                 <HashLink className="nav-link" to="/#technology" onClick={handleNavLinkClick}>Technology</HashLink>
               </li>
               <li className="nav-item mx-3">
-                <HashLink className="nav-link" to="/#ourStory" onClick={handleNavLinkClick}>Our Story</HashLink>
-              </li>
-              <li className="nav-item mx-3">
                 <HashLink className="nav-link" to="/#contactUs" onClick={handleNavLinkClick}>Contact Us</HashLink>
               </li>
               {/* 🔹 Added Pricing Link */}
