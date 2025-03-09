@@ -70,8 +70,8 @@ export default function ContactPage() {
                         </div>
                         <p style={{ marginTop: '30px', fontSize: '40px', fontWeight: '800',color:'whitesmoke' }}>Looking for a development services company?</p>
                         <p style={{ marginTop: '30px', fontSize: '40px', fontWeight: '800',color:'whitesmoke' }}>Call - (206)571-7659</p>
-                        <p style={{ marginTop: '10px', fontSize: '40px', fontWeight: '800',color:'whitesmoke' }}>3055 NW YEON AVE  UNTT#271</p>
-                        <p style={{ marginTop: '10px', fontSize: '40px', fontWeight: '800',color:'whitesmoke' }}>Portland, OR 97210</p>
+                        <p style={{ marginTop: '30px', fontSize: '20px', fontWeight: '800',color:'whitesmoke' }}>3055 NW YEON AVE  UNTT#271</p>
+                        <p style={{ marginTop: '30px', fontSize: '20px', fontWeight: '800',color:'whitesmoke' }}>Portland, OR 97210</p>
                         <p style={{ marginTop: '30px', fontSize: '20px', fontWeight: '500',color:'whitesmoke' }}>Get a free consultation now.</p>
                         <p style={{ marginTop: '30px', fontSize: '20px', fontWeight: '500',color:'whitesmoke' }}>Please fill the form or send us an email</p>
                         <a href="mailto:info@seatechconsulting.com" style={{ color: 'white' }}>info@seatechconsulting.com</a>
