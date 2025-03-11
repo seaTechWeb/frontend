@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function OurCompanies() {
     return (
-        <section id='OurCompanies' style={{paddingTop:'65px' }} >
-            <div style={{ backgroundColor: '#e9e9e9', paddingTop: '20px',paddingBottom:'50px', marginTop: '30px' , borderTop:'5px solid #0f0f49', borderBottom:'5px solid #0f0f49'}}>
+        <section id='OurCompanies' style={{ paddingTop: '65px' }} >
+            <div style={{ backgroundColor: '#e9e9e9', paddingTop: '20px', paddingBottom: '50px', marginTop: '30px', borderTop: '5px solid #0f0f49', borderBottom: '5px solid #0f0f49' }}>
                 <div className='container' >
                     <h1 className='text-center more-weight' >OurCompanies</h1>
                     <div className='row'>
@@ -41,39 +42,14 @@ export default function OurCompanies() {
                             </div>
                         </div>
                         <div className='col-md-4'>
-                            <div data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
-                                <img src='/Images/blue-bird-logo.png' alt='Client 2' className='client-img rounded mx-auto d-block' />
-                            </div>
-                            <div className="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                <div className="modal-dialog modal-fullscreen">
-                                    <div className="modal-content">
-                                        <div className="modal-header">
-                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div className="modal-body">
-                                            <div className='container  my-4'>
-                                                <h1 className='text-center'>Blue Bird Taxi Mobile Reservation System</h1>
-                                                <hr />
-                                                <div className='text-center'><img style={{ maxWidth: '90%', width: '450px', margin: '30px' }} src="/Images/Feature client/350x205_bluebird.png" alt='Blue Bird Taxi Mobile Reservation System' /></div>
-                                                <p>Blue Bird Taxi had more than 300 telephone lines to handle taxi orders in Jakarta.During rush hour, Blue Bird Taxi’s telephone lines were frequently jammed, resulting in lost businesses and customer complaints.In 2011,Seatech Consultingmobile proposed to Blue Bird taxi to launch a mobile app to alleviate this problem.
-                                                </p>
-                                                <br />
-                                                <p>Orders through mobile app are fed directly to Blue Bird Taxi’s servers, bypassing Blue Bird Taxi’s telephone switchboard. A customer who orders a taxi through the mobile app can also track the movement of the taxi assigned to him using Google map. In traffic jam prevalent Jakarta, this feature is handy; it reassures the customer that a taxi is on its way. As the customer waits, he can monitor the taxi heading to his location. The taxi driver can also call the customer’s mobile phone if he can’t find the address and vice-versa if the customer needs to contact the driver for additional direction. Blue Bird Taxi mobile app is now available on iOS, Android and Blackberry and cover major cities in Indonesia.</p>
-                                                <br />
-                                                <p>With over 750,000 downloads, the apps have become indispensable to many residents and expats in Indonesia.</p>
-                                                <div className='text-center'>
-                                                    <span style={{ marginRight: '10px' }}>Client : <a href="https://www.bluebirdgroup.com/" target='_blank' rel="noreferrer">Bluebird</a></span>
-                                                    <span style={{ marginLeft: '10px' }}>Service : <a href="https://play.google.com/store/apps/details?id=com.Seatech Consulting.bluebird&hl=en" target='_blank' rel="noreferrer">Android</a></span>
-                                                    <span style={{ marginLeft: '10px' }}><a href="https://apps.apple.com/id/app/mybluebird-taxi/id476533261" target='_blank' rel="noreferrer"> iOS</a></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="modal-footer text-center">
-                                            <button type="button" className="btn btn-dark" data-bs-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <Link to="orderxperts" style={{ cursor: 'pointer',display:'flex',justifyContent:'center',alignItems:'center' }}>  
+                                <img
+                                    className='client-img'
+                                    src="/Images/Xperts Restaurant/OrderXpert Logo.png"
+                                    alt='Xpert Restaurant'
+                                    style={{ width: '90%', height: '80%', margin: 'auto' }}
+                                />
+                            </Link>
                         </div>
                         <div className='col-md-4'>
                             <div data-bs-toggle="modal" data-bs-target="#staticBackdrop8">

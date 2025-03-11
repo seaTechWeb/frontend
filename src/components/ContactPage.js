@@ -18,7 +18,7 @@ export default function ContactPage() {
             reply_to: email,
         };
 
-        emailjs.send('service_w9c62nr', 'template_2o63ksf', templateParams, 'VpD7p9itEu1Ar354C')
+        emailjs.send('service_kgbijzh', 'template_oa19c6e', templateParams, 'VpD7p9itEu1Ar354C')
             .then((response) => {
                 setName('');
                 setEmail('');
